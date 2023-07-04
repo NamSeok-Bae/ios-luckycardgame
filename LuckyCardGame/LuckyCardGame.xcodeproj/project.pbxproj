@@ -1,0 +1,621 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		64E619132A540E41001030F4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64E619122A540E41001030F4 /* AppDelegate.swift */; };
+		64E619152A540E41001030F4 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64E619142A540E41001030F4 /* SceneDelegate.swift */; };
+		64E619172A540E41001030F4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64E619162A540E41001030F4 /* ViewController.swift */; };
+		64E6191C2A540E42001030F4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 64E6191B2A540E42001030F4 /* Assets.xcassets */; };
+		64E6191F2A540E42001030F4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 64E6191D2A540E42001030F4 /* LaunchScreen.storyboard */; };
+		64E6192A2A540E42001030F4 /* LuckyCardGameTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64E619292A540E42001030F4 /* LuckyCardGameTests.swift */; };
+		64E619342A540E42001030F4 /* LuckyCardGameUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64E619332A540E42001030F4 /* LuckyCardGameUITests.swift */; };
+		64E619362A540E42001030F4 /* LuckyCardGameUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64E619352A540E42001030F4 /* LuckyCardGameUITestsLaunchTests.swift */; };
+		64E619462A5410C0001030F4 /* ContainerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64E619452A5410C0001030F4 /* ContainerView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		64E619262A540E42001030F4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 64E619072A540E41001030F4 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 64E6190E2A540E41001030F4;
+			remoteInfo = LuckyCardGame;
+		};
+		64E619302A540E42001030F4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 64E619072A540E41001030F4 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 64E6190E2A540E41001030F4;
+			remoteInfo = LuckyCardGame;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		64E6190F2A540E41001030F4 /* 럭키카드.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "럭키카드.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		64E619122A540E41001030F4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		64E619142A540E41001030F4 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		64E619162A540E41001030F4 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		64E6191B2A540E42001030F4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		64E6191E2A540E42001030F4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		64E619202A540E42001030F4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		64E619252A540E42001030F4 /* LuckyCardGameTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LuckyCardGameTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		64E619292A540E42001030F4 /* LuckyCardGameTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LuckyCardGameTests.swift; sourceTree = "<group>"; };
+		64E6192F2A540E42001030F4 /* LuckyCardGameUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LuckyCardGameUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		64E619332A540E42001030F4 /* LuckyCardGameUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LuckyCardGameUITests.swift; sourceTree = "<group>"; };
+		64E619352A540E42001030F4 /* LuckyCardGameUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LuckyCardGameUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		64E619452A5410C0001030F4 /* ContainerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContainerView.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		64E6190C2A540E41001030F4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		64E619222A540E42001030F4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		64E6192C2A540E42001030F4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		64E619062A540E41001030F4 = {
+			isa = PBXGroup;
+			children = (
+				64E619112A540E41001030F4 /* LuckyCardGame */,
+				64E619282A540E42001030F4 /* LuckyCardGameTests */,
+				64E619322A540E42001030F4 /* LuckyCardGameUITests */,
+				64E619102A540E41001030F4 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		64E619102A540E41001030F4 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				64E6190F2A540E41001030F4 /* 럭키카드.app */,
+				64E619252A540E42001030F4 /* LuckyCardGameTests.xctest */,
+				64E6192F2A540E42001030F4 /* LuckyCardGameUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		64E619112A540E41001030F4 /* LuckyCardGame */ = {
+			isa = PBXGroup;
+			children = (
+				64E619442A540E7D001030F4 /* View */,
+				64E619432A540E76001030F4 /* ViewController */,
+				64E619422A540E72001030F4 /* etc */,
+			);
+			path = LuckyCardGame;
+			sourceTree = "<group>";
+		};
+		64E619282A540E42001030F4 /* LuckyCardGameTests */ = {
+			isa = PBXGroup;
+			children = (
+				64E619292A540E42001030F4 /* LuckyCardGameTests.swift */,
+			);
+			path = LuckyCardGameTests;
+			sourceTree = "<group>";
+		};
+		64E619322A540E42001030F4 /* LuckyCardGameUITests */ = {
+			isa = PBXGroup;
+			children = (
+				64E619332A540E42001030F4 /* LuckyCardGameUITests.swift */,
+				64E619352A540E42001030F4 /* LuckyCardGameUITestsLaunchTests.swift */,
+			);
+			path = LuckyCardGameUITests;
+			sourceTree = "<group>";
+		};
+		64E619422A540E72001030F4 /* etc */ = {
+			isa = PBXGroup;
+			children = (
+				64E6191B2A540E42001030F4 /* Assets.xcassets */,
+				64E6191D2A540E42001030F4 /* LaunchScreen.storyboard */,
+				64E619202A540E42001030F4 /* Info.plist */,
+				64E619122A540E41001030F4 /* AppDelegate.swift */,
+				64E619142A540E41001030F4 /* SceneDelegate.swift */,
+			);
+			path = etc;
+			sourceTree = "<group>";
+		};
+		64E619432A540E76001030F4 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				64E619162A540E41001030F4 /* ViewController.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		64E619442A540E7D001030F4 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				64E619452A5410C0001030F4 /* ContainerView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		64E6190E2A540E41001030F4 /* LuckyCardGame */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 64E619392A540E42001030F4 /* Build configuration list for PBXNativeTarget "LuckyCardGame" */;
+			buildPhases = (
+				64E6190B2A540E41001030F4 /* Sources */,
+				64E6190C2A540E41001030F4 /* Frameworks */,
+				64E6190D2A540E41001030F4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = LuckyCardGame;
+			productName = LuckyCardGame;
+			productReference = 64E6190F2A540E41001030F4 /* 럭키카드.app */;
+			productType = "com.apple.product-type.application";
+		};
+		64E619242A540E42001030F4 /* LuckyCardGameTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 64E6193C2A540E42001030F4 /* Build configuration list for PBXNativeTarget "LuckyCardGameTests" */;
+			buildPhases = (
+				64E619212A540E42001030F4 /* Sources */,
+				64E619222A540E42001030F4 /* Frameworks */,
+				64E619232A540E42001030F4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				64E619272A540E42001030F4 /* PBXTargetDependency */,
+			);
+			name = LuckyCardGameTests;
+			productName = LuckyCardGameTests;
+			productReference = 64E619252A540E42001030F4 /* LuckyCardGameTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		64E6192E2A540E42001030F4 /* LuckyCardGameUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 64E6193F2A540E42001030F4 /* Build configuration list for PBXNativeTarget "LuckyCardGameUITests" */;
+			buildPhases = (
+				64E6192B2A540E42001030F4 /* Sources */,
+				64E6192C2A540E42001030F4 /* Frameworks */,
+				64E6192D2A540E42001030F4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				64E619312A540E42001030F4 /* PBXTargetDependency */,
+			);
+			name = LuckyCardGameUITests;
+			productName = LuckyCardGameUITests;
+			productReference = 64E6192F2A540E42001030F4 /* LuckyCardGameUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		64E619072A540E41001030F4 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1430;
+				LastUpgradeCheck = 1430;
+				TargetAttributes = {
+					64E6190E2A540E41001030F4 = {
+						CreatedOnToolsVersion = 14.3.1;
+					};
+					64E619242A540E42001030F4 = {
+						CreatedOnToolsVersion = 14.3.1;
+						TestTargetID = 64E6190E2A540E41001030F4;
+					};
+					64E6192E2A540E42001030F4 = {
+						CreatedOnToolsVersion = 14.3.1;
+						TestTargetID = 64E6190E2A540E41001030F4;
+					};
+				};
+			};
+			buildConfigurationList = 64E6190A2A540E41001030F4 /* Build configuration list for PBXProject "LuckyCardGame" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 64E619062A540E41001030F4;
+			productRefGroup = 64E619102A540E41001030F4 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				64E6190E2A540E41001030F4 /* LuckyCardGame */,
+				64E619242A540E42001030F4 /* LuckyCardGameTests */,
+				64E6192E2A540E42001030F4 /* LuckyCardGameUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		64E6190D2A540E41001030F4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				64E6191F2A540E42001030F4 /* LaunchScreen.storyboard in Resources */,
+				64E6191C2A540E42001030F4 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		64E619232A540E42001030F4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		64E6192D2A540E42001030F4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		64E6190B2A540E41001030F4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				64E619462A5410C0001030F4 /* ContainerView.swift in Sources */,
+				64E619172A540E41001030F4 /* ViewController.swift in Sources */,
+				64E619132A540E41001030F4 /* AppDelegate.swift in Sources */,
+				64E619152A540E41001030F4 /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		64E619212A540E42001030F4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				64E6192A2A540E42001030F4 /* LuckyCardGameTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		64E6192B2A540E42001030F4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				64E619342A540E42001030F4 /* LuckyCardGameUITests.swift in Sources */,
+				64E619362A540E42001030F4 /* LuckyCardGameUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		64E619272A540E42001030F4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 64E6190E2A540E41001030F4 /* LuckyCardGame */;
+			targetProxy = 64E619262A540E42001030F4 /* PBXContainerItemProxy */;
+		};
+		64E619312A540E42001030F4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 64E6190E2A540E41001030F4 /* LuckyCardGame */;
+			targetProxy = 64E619302A540E42001030F4 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		64E6191D2A540E42001030F4 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				64E6191E2A540E42001030F4 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		64E619372A540E42001030F4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		64E619382A540E42001030F4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		64E6193A2A540E42001030F4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 3X23G6XQ74;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = LuckyCardGame/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "NamSeok-Bae.LuckyCardGame";
+				PRODUCT_NAME = "럭키카드";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		64E6193B2A540E42001030F4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 3X23G6XQ74;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = LuckyCardGame/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "NamSeok-Bae.LuckyCardGame";
+				PRODUCT_NAME = "럭키카드";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		64E6193D2A540E42001030F4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 3X23G6XQ74;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "NamSeok-Bae.LuckyCardGameTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/LuckyCardGame.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/LuckyCardGame";
+			};
+			name = Debug;
+		};
+		64E6193E2A540E42001030F4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 3X23G6XQ74;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "NamSeok-Bae.LuckyCardGameTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/LuckyCardGame.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/LuckyCardGame";
+			};
+			name = Release;
+		};
+		64E619402A540E42001030F4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 3X23G6XQ74;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "NamSeok-Bae.LuckyCardGameUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = LuckyCardGame;
+			};
+			name = Debug;
+		};
+		64E619412A540E42001030F4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 3X23G6XQ74;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "NamSeok-Bae.LuckyCardGameUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = LuckyCardGame;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		64E6190A2A540E41001030F4 /* Build configuration list for PBXProject "LuckyCardGame" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				64E619372A540E42001030F4 /* Debug */,
+				64E619382A540E42001030F4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		64E619392A540E42001030F4 /* Build configuration list for PBXNativeTarget "LuckyCardGame" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				64E6193A2A540E42001030F4 /* Debug */,
+				64E6193B2A540E42001030F4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		64E6193C2A540E42001030F4 /* Build configuration list for PBXNativeTarget "LuckyCardGameTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				64E6193D2A540E42001030F4 /* Debug */,
+				64E6193E2A540E42001030F4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		64E6193F2A540E42001030F4 /* Build configuration list for PBXNativeTarget "LuckyCardGameUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				64E619402A540E42001030F4 /* Debug */,
+				64E619412A540E42001030F4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 64E619072A540E41001030F4 /* Project object */;
+}
