@@ -7,7 +7,10 @@
 
 import Foundation
 
-protocol Deck {
+/*
+ Deck은 카드 보관 뿐만 아니라 섞이고, 출력하는 기능을 담당합니다.
+ */
+private protocol Deck {
     var deck: [Card] { get set }
     
     func shuffle()
@@ -15,7 +18,7 @@ protocol Deck {
 }
 
 final class DefaultDeck: Deck {
-    var deck: [Card]
+    fileprivate var deck: [Card]
     
     init(deck: [Card]) {
         self.deck = deck

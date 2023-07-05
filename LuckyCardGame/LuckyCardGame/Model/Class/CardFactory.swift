@@ -7,7 +7,10 @@
 
 import Foundation
 
-protocol CardFactory {
+/*
+ CardFactory는 Card를 생성하고 모든 카드들이 모여 Deck을 완성했을 때 반환해주는 역할을 담당합니다.
+ */
+private protocol CardFactory {
     var deck: [Card] { get }
     
     func createCard()
@@ -15,12 +18,12 @@ protocol CardFactory {
 }
 
 final class DefaultCardFactory: CardFactory {
-    var deck: [Card] = []
+    fileprivate var deck: [Card] = []
     
     func createCard() {
         for i in AnimalType.allCases {
-            for j in 1...12 {
-                let newCard = Card(animalType: i, number: j)
+            for j in CardNumberType.allCases {
+                let newCard = Card(animalType: i, cardNumberType: j)
                 deck.append(newCard)
             }
         }
