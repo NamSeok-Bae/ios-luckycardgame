@@ -18,7 +18,9 @@
 		64E619462A5410C0001030F4 /* ContainerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64E619452A5410C0001030F4 /* ContainerView.swift */; };
 		64E6194B2A55021A001030F4 /* Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64E6194A2A55021A001030F4 /* Card.swift */; };
 		64E6194D2A550228001030F4 /* UIView+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64E6194C2A550228001030F4 /* UIView+.swift */; };
-		64E619532A550397001030F4 /* Animal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64E619522A550397001030F4 /* Animal.swift */; };
+		64E6195B2A5514A2001030F4 /* AnimalType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64E6195A2A5514A2001030F4 /* AnimalType.swift */; };
+		64E6195D2A551A4C001030F4 /* CardFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64E6195C2A551A4C001030F4 /* CardFactory.swift */; };
+		64E6195F2A551A57001030F4 /* Deck.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64E6195E2A551A57001030F4 /* Deck.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,7 +56,9 @@
 		64E619452A5410C0001030F4 /* ContainerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContainerView.swift; sourceTree = "<group>"; };
 		64E6194A2A55021A001030F4 /* Card.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Card.swift; sourceTree = "<group>"; };
 		64E6194C2A550228001030F4 /* UIView+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+.swift"; sourceTree = "<group>"; };
-		64E619522A550397001030F4 /* Animal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Animal.swift; sourceTree = "<group>"; };
+		64E6195A2A5514A2001030F4 /* AnimalType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimalType.swift; sourceTree = "<group>"; };
+		64E6195C2A551A4C001030F4 /* CardFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardFactory.swift; sourceTree = "<group>"; };
+		64E6195E2A551A57001030F4 /* Deck.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Deck.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -188,6 +192,7 @@
 		64E6194F2A550262001030F4 /* Enum */ = {
 			isa = PBXGroup;
 			children = (
+				64E6195A2A5514A2001030F4 /* AnimalType.swift */,
 			);
 			path = Enum;
 			sourceTree = "<group>";
@@ -195,8 +200,9 @@
 		64E619502A550283001030F4 /* Class */ = {
 			isa = PBXGroup;
 			children = (
-				64E619522A550397001030F4 /* Animal.swift */,
 				64E6194A2A55021A001030F4 /* Card.swift */,
+				64E6195C2A551A4C001030F4 /* CardFactory.swift */,
+				64E6195E2A551A57001030F4 /* Deck.swift */,
 			);
 			path = Class;
 			sourceTree = "<group>";
@@ -338,13 +344,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				64E6195F2A551A57001030F4 /* Deck.swift in Sources */,
 				64E6194D2A550228001030F4 /* UIView+.swift in Sources */,
 				64E619462A5410C0001030F4 /* ContainerView.swift in Sources */,
 				64E619172A540E41001030F4 /* ViewController.swift in Sources */,
 				64E6194B2A55021A001030F4 /* Card.swift in Sources */,
-				64E619532A550397001030F4 /* Animal.swift in Sources */,
 				64E619132A540E41001030F4 /* AppDelegate.swift in Sources */,
 				64E619152A540E41001030F4 /* SceneDelegate.swift in Sources */,
+				64E6195D2A551A4C001030F4 /* CardFactory.swift in Sources */,
+				64E6195B2A5514A2001030F4 /* AnimalType.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
