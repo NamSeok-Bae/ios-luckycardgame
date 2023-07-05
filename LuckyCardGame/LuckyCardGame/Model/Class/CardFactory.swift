@@ -23,7 +23,8 @@ final class DefaultCardFactory: CardFactory {
     func createCard() {
         for i in AnimalType.allCases {
             for j in CardNumberType.allCases {
-                let newCard = Card(animalType: i, cardNumberType: j)
+                let newCard = Card()
+                newCard.setInformation(i, j)
                 deck.append(newCard)
             }
         }

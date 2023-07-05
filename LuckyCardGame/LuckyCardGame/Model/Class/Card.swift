@@ -8,31 +8,53 @@
 import UIKit
 
 /*
- Card에선 기본적으로 animal emoji, number, 앞뒤유무, 뒷면일 경우 이미지가 필요하다고 생각했고,
- 이러한 정보를 담는 객체 역할을 합니다.
+ Card에서 앞뒤유무에 따라 화면에 나타내는 정보가 다르다고 생각했습니다.
+ 그렇기때문에 앞면과 뒷면을 따라 나타내주는 역할이 다르다고 생각을 했고 이를 Protocol로 분리해주어 채택하도록 하였습니다.
  */
-private protocol CardInfomation {
-    var animal: String { get }
-    var number: Int { get }
-    var back: Bool { get }
+protocol CardFrontable {
+    var animal: String { get set }
+    var number: Int { get set }
+    
+    func setInformation(_ animalType: AnimalType, _ cardNumberType: CardNumberType)
 }
 
-final class Card: CardInfomation, CustomStringConvertible {
-    fileprivate var animal: String
-    fileprivate var number: Int
-    fileprivate var back: Bool = false
-    private var image: UIImage? = nil
+extension CardFrontable {
+    mutating func setInformation(_ animalType: AnimalType, _ cardNumberType: CardNumberType) {
+        self.animal = animalType.rawValue
+        self.number = cardNumberType.rawValue
+    }
+}
+
+protocol CardBackable {
+    var image: UIImage? { get set }
+    
+    func setInformation()
+}
+
+extension CardBackable {
+    mutating func setInformation() {
+        self.image = UIImage(systemName: "house") ?? UIImage()
+    }
+}
+
+final class Card: CardFrontable, CardBackable, CustomStringConvertible {
+    var animal: String = ""
+    var number: Int = 0
+    var image: UIImage? = nil
     var description: String {
-        return "\(animal)\(String(format: "%02d", number))"
+        if let image {
+            return "\(image)"
+        } else {
+            return "\(animal)\(String(format: "%02d", number))"
+        }
     }
     
-    init(animalType: AnimalType, cardNumberType: CardNumberType) {
+    func setInformation(_ animalType: AnimalType, _ cardNumberType: CardNumberType) {
         self.animal = animalType.rawValue
         self.number = cardNumberType.rawValue
     }
     
-    init(animal: String, number: Int) {
-        self.animal = animal
-        self.number = number
+    func setInformation() {
+        self.image = UIImage(systemName: "house") ?? UIImage()
     }
 }
