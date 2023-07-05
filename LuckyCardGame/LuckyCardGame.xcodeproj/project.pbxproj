@@ -16,6 +16,8 @@
 		64E619342A540E42001030F4 /* LuckyCardGameUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64E619332A540E42001030F4 /* LuckyCardGameUITests.swift */; };
 		64E619362A540E42001030F4 /* LuckyCardGameUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64E619352A540E42001030F4 /* LuckyCardGameUITestsLaunchTests.swift */; };
 		64E619462A5410C0001030F4 /* ContainerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64E619452A5410C0001030F4 /* ContainerView.swift */; };
+		64E6194B2A55021A001030F4 /* Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64E6194A2A55021A001030F4 /* Card.swift */; };
+		64E6194D2A550228001030F4 /* UIView+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64E6194C2A550228001030F4 /* UIView+.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +51,8 @@
 		64E619332A540E42001030F4 /* LuckyCardGameUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LuckyCardGameUITests.swift; sourceTree = "<group>"; };
 		64E619352A540E42001030F4 /* LuckyCardGameUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LuckyCardGameUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		64E619452A5410C0001030F4 /* ContainerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContainerView.swift; sourceTree = "<group>"; };
+		64E6194A2A55021A001030F4 /* Card.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Card.swift; sourceTree = "<group>"; };
+		64E6194C2A550228001030F4 /* UIView+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -156,6 +160,7 @@
 		64E619482A5501E5001030F4 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				64E6194A2A55021A001030F4 /* Card.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -163,6 +168,7 @@
 		64E619492A5501FE001030F4 /* Util */ = {
 			isa = PBXGroup;
 			children = (
+				64E6194C2A550228001030F4 /* UIView+.swift */,
 			);
 			path = Util;
 			sourceTree = "<group>";
@@ -297,8 +303,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				64E6194D2A550228001030F4 /* UIView+.swift in Sources */,
 				64E619462A5410C0001030F4 /* ContainerView.swift in Sources */,
 				64E619172A540E41001030F4 /* ViewController.swift in Sources */,
+				64E6194B2A55021A001030F4 /* Card.swift in Sources */,
 				64E619132A540E41001030F4 /* AppDelegate.swift in Sources */,
 				64E619152A540E41001030F4 /* SceneDelegate.swift in Sources */,
 			);
