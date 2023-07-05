@@ -11,9 +11,7 @@ class ViewController: UIViewController {
     // MARK: - UI Properties
     private lazy var headerView: UIView = {
         let view = UIView()
-        view.backgroundColor = .yellow
-        view.translatesAutoresizingMaskIntoConstraints = false
-        view.layer.cornerRadius = 10
+        view.configureColorRoundView(.yellow)
         return view
     }()
     
@@ -25,10 +23,7 @@ class ViewController: UIViewController {
     
     private lazy var fotterView: UIView = {
         let view = UIView()
-        view.backgroundColor = .gray
-        view.layer.cornerRadius = 10
-        view.translatesAutoresizingMaskIntoConstraints = false
-        
+        view.configureColorRoundView(.gray)
         return view
     }()
     
@@ -41,6 +36,7 @@ class ViewController: UIViewController {
         
         setupViews()
         configureUI()
+        createCardFactory()
     }
     
     // MARK: - Functions
@@ -139,5 +135,12 @@ class ViewController: UIViewController {
         fotterView.bottomAnchor.constraint(equalTo: view.safeAreaLayoutGuide.bottomAnchor,
                                            constant: -5).isActive = true
     }
+    
+    private func createCardFactory() {
+        let cardFactory = DefaultCardFactory()
+        cardFactory.createCard()
+        let deck = DefaultDeck(deck: cardFactory.returnDeck())
+        deck.shuffle()
+        deck.printDeck()
+    }
 }
-

@@ -25,14 +25,23 @@ final class ContainerView: UIView {
     }()
     
     // MARK: - LifeCycles
-    init(areaName: String) {
-        super.init(frame: CGRect())
+    override init(frame: CGRect) {
+        super.init(frame: frame)
         setupViews()
-        configureUI(areaName)
+        configureUI()
+    }
+    
+    convenience init(areaName: String) {
+        self.init(frame: CGRect())
+        setupViews()
+        configureUI()
+        bindAreaLabel(areaName)
     }
     
     required init?(coder: NSCoder) {
-        fatalError("init(coder:) has not been implemented")
+        super.init(coder: coder)
+        setupViews()
+        configureUI()
     }
     
     // MARK: - Funtions
@@ -41,12 +50,9 @@ final class ContainerView: UIView {
         self.addSubview(areaLabel)
     }
     
-    private func configureUI(_ areaName: String) {
-        self.backgroundColor = .systemGray5
-        self.layer.cornerRadius = 10
-        self.translatesAutoresizingMaskIntoConstraints = false
+    private func configureUI() {
+        self.configureColorRoundView(.systemGray5)
         
-        areaLabel.text = areaName
         areaLabel.topAnchor.constraint(equalTo: self.topAnchor,
                                    constant: 15).isActive = true
         areaLabel.leadingAnchor.constraint(equalTo: self.leadingAnchor,
@@ -54,5 +60,9 @@ final class ContainerView: UIView {
         areaLabel.bottomAnchor.constraint(equalTo: self.bottomAnchor,
                                       constant: -15).isActive = true
         areaLabel.widthAnchor.constraint(equalToConstant: 50).isActive = true
+    }
+    
+    func bindAreaLabel(_ areaName: String) {
+        areaLabel.text = areaName
     }
 }
