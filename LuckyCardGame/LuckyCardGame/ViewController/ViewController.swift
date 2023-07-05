@@ -41,6 +41,7 @@ class ViewController: UIViewController {
         
         setupViews()
         configureUI()
+        createCardFactory()
     }
     
     // MARK: - Functions
@@ -139,5 +140,11 @@ class ViewController: UIViewController {
         fotterView.bottomAnchor.constraint(equalTo: view.safeAreaLayoutGuide.bottomAnchor,
                                            constant: -5).isActive = true
     }
+    
+    private func createCardFactory() {
+        let cardFactory = DefaultCardFactory()
+        cardFactory.createCard()
+        let deck = DefaultDeck(deck: cardFactory.returnDeck())
+        deck.printShuffeldDeck()
+    }
 }
-
