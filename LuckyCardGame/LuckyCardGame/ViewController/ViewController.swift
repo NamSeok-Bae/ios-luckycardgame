@@ -140,6 +140,7 @@ class ViewController: UIViewController {
         let cardFactory = DefaultCardFactory()
         cardFactory.createCard()
         let deck = DefaultDeck(deck: cardFactory.returnDeck())
-        deck.printShuffeldDeck()
+        deck.shuffle()
+        deck.printDeck()
     }
 }
