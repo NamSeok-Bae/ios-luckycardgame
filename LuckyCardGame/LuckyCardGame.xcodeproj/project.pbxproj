@@ -160,7 +160,8 @@
 		64E619482A5501E5001030F4 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				64E6194A2A55021A001030F4 /* Card.swift */,
+				64E619512A550289001030F4 /* Struct */,
+				64E619502A550283001030F4 /* Class */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -168,9 +169,40 @@
 		64E619492A5501FE001030F4 /* Util */ = {
 			isa = PBXGroup;
 			children = (
-				64E6194C2A550228001030F4 /* UIView+.swift */,
+				64E6194F2A550262001030F4 /* Enum */,
+				64E6194E2A55025B001030F4 /* Extension */,
 			);
 			path = Util;
+			sourceTree = "<group>";
+		};
+		64E6194E2A55025B001030F4 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				64E6194C2A550228001030F4 /* UIView+.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		64E6194F2A550262001030F4 /* Enum */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Enum;
+			sourceTree = "<group>";
+		};
+		64E619502A550283001030F4 /* Class */ = {
+			isa = PBXGroup;
+			children = (
+				64E6194A2A55021A001030F4 /* Card.swift */,
+			);
+			path = Class;
+			sourceTree = "<group>";
+		};
+		64E619512A550289001030F4 /* Struct */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Struct;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

@@ -7,6 +7,6 @@
 
 import Foundation
 
-class Card {
+final class Card {
     
 }
