@@ -8,8 +8,10 @@
 import Foundation
 
 protocol Deck {
-    func printShuffeldDeck()
-    func divideCard()
+    var deck: [Card] { get set }
+    
+    func shuffle()
+    func printDeck()
 }
 
 final class DefaultDeck: Deck {
@@ -19,18 +21,17 @@ final class DefaultDeck: Deck {
         self.deck = deck
     }
     
-    func printShuffeldDeck() {
-        let shuffledDeck = deck.shuffled()
-        for (index, i) in shuffledDeck.enumerated() {
-            if index == shuffledDeck.count - 1 {
+    func shuffle() {
+        self.deck.shuffle()
+    }
+    
+    func printDeck() {
+        for (index, i) in deck.enumerated() {
+            if index == deck.count - 1 {
                 print(i.description)
             } else {
                 print(i.description, terminator: ", ")
             }
         }
-    }
-    
-    func divideCard() {
-        
     }
 }
