@@ -51,9 +51,7 @@ final class ContainerView: UIView {
     }
     
     private func configureUI() {
-        self.backgroundColor = .systemGray5
-        self.layer.cornerRadius = 10
-        self.translatesAutoresizingMaskIntoConstraints = false
+        self.configureColorRoundView(.systemGray5)
         
         areaLabel.topAnchor.constraint(equalTo: self.topAnchor,
                                    constant: 15).isActive = true

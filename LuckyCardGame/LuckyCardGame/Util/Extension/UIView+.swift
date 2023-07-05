@@ -8,5 +8,9 @@
 import UIKit
 
 extension UIView {
-    
+    func configureColorRoundView(_ color: UIColor? = nil) {
+        self.layer.cornerRadius = 10
+        self.translatesAutoresizingMaskIntoConstraints = false
+        self.backgroundColor = color ?? .white
+    }
 }
