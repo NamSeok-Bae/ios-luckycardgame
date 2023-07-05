@@ -25,17 +25,17 @@ final class ContainerView: UIView {
     }()
     
     // MARK: - LifeCycles
-    init(areaName: String) {
-        super.init(frame: CGRect())
-        setupViews()
-        configureUI()
-        bindAreaLabel(areaName)
-    }
-    
     override init(frame: CGRect) {
         super.init(frame: frame)
         setupViews()
         configureUI()
+    }
+    
+    convenience init(areaName: String) {
+        self.init(frame: CGRect())
+        setupViews()
+        configureUI()
+        bindAreaLabel(areaName)
     }
     
     required init?(coder: NSCoder) {
