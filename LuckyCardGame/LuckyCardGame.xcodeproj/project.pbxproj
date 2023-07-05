@@ -100,7 +100,9 @@
 			isa = PBXGroup;
 			children = (
 				64E619442A540E7D001030F4 /* View */,
+				64E619482A5501E5001030F4 /* Model */,
 				64E619432A540E76001030F4 /* ViewController */,
+				64E619492A5501FE001030F4 /* Util */,
 				64E619422A540E72001030F4 /* etc */,
 			);
 			path = LuckyCardGame;
@@ -149,6 +151,20 @@
 				64E619452A5410C0001030F4 /* ContainerView.swift */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		64E619482A5501E5001030F4 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		64E619492A5501FE001030F4 /* Util */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Util;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
