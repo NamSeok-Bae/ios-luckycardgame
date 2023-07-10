@@ -9,26 +9,33 @@ import UIKit
 
 class ViewController: UIViewController {
     // MARK: - UI Properties
-    private lazy var headerView: UIView = {
-        let view = UIView()
-        view.configureColorRoundView(.yellow)
-        return view
+    private lazy var segmentedControl: UISegmentedControl = {
+        let segmentedControl = UISegmentedControl(items: PlayerCountType.allCases.map { $0.string })
+        segmentedControl.translatesAutoresizingMaskIntoConstraints = false
+        segmentedControl.selectedSegmentIndex = 0
+        segmentedControl.addTarget(self, action: #selector(didChangeControlValue(segment:)), for: .valueChanged)
+        self.didChangeControlValue(segment: segmentedControl)
+        return segmentedControl
     }()
     
-    private lazy var firstAreaView = ContainerView(areaName: "A")
-    private lazy var secondAreaView = ContainerView(areaName: "B")
-    private lazy var thirdAreaView = ContainerView(areaName: "C")
-    private lazy var fourthAreaView = ContainerView(areaName: "D")
-    private lazy var fifthAreaView = ContainerView(areaName: "E")
+    private lazy var containerStackView: UIStackView = {
+        let stackView = UIStackView()
+        stackView.configureColorRoundView()
+        stackView.axis = .vertical
+        stackView.spacing = 10
+        stackView.distribution = .fillEqually
+        return stackView
+    }()
     
-    private lazy var fotterView: UIView = {
+    private lazy var footerView: UIView = {
         let view = UIView()
         view.configureColorRoundView(.gray)
         return view
     }()
     
+    private var footerViewHeightConstraint: NSLayoutConstraint?
+    
     // MARK: - Properties
-    private var containerViewHeight: CGFloat?
     
     // MARK: - LifeCycles
     override func viewDidLoad() {
@@ -36,111 +43,136 @@ class ViewController: UIViewController {
         
         setupViews()
         configureUI()
-        createCardFactory()
     }
     
     // MARK: - Functions
     private func setupViews() {
-        [headerView,
-         firstAreaView,
-         secondAreaView,
-         thirdAreaView,
-         fourthAreaView,
-         fifthAreaView,
-         fotterView
+        setupContainerStackVeiw()
+        
+        [segmentedControl,
+         containerStackView,
+         footerView
         ].forEach {
             view.addSubview($0)
         }
     }
     
+    private func setupContainerStackVeiw() {
+        BoardNameType.allCases.dropLast(1).forEach {
+            containerStackView.addArrangedSubview(ContainerView(areaName: $0.name))
+        }
+    }
+    
     private func configureUI() {
         view.backgroundColor = .white
-        containerViewHeight = (view.frame.height - 350) / 5
-        configureHeaderView()
-        configureFirstAreaView()
-        configureSecondAreaView()
-        configureThirdAreaView()
-        configureFourthAreaView()
-        configureFifthAreaView()
-        configureFotterView()
+        configureSegmentedControl()
+        configureContainerStackView()
+        configurefooterView()
     }
     
-    private func configureHeaderView() {
-        headerView.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor,
+    private func configureSegmentedControl() {
+        segmentedControl.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor,
                                                   constant: 5).isActive = true
-        headerView.leadingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.leadingAnchor,
+        segmentedControl.leadingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.leadingAnchor,
                                                       constant: 10).isActive = true
-        headerView.trailingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.trailingAnchor,
+        segmentedControl.trailingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.trailingAnchor,
                                                        constant: -10).isActive = true
-        headerView.heightAnchor.constraint(equalToConstant: 44).isActive = true
+        segmentedControl.heightAnchor.constraint(equalToConstant: 44).isActive = true
     }
     
-    private func configureFirstAreaView() {
-        firstAreaView.topAnchor.constraint(equalTo: headerView.bottomAnchor,
-                                           constant: 10).isActive = true
-        firstAreaView.leadingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.leadingAnchor,
-                                               constant: 10).isActive = true
-        firstAreaView.trailingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.trailingAnchor,
-                                                constant: -10).isActive = true
-        firstAreaView.heightAnchor.constraint(equalToConstant: containerViewHeight ?? 100).isActive = true
-    }
-    
-    private func configureSecondAreaView() {
-        secondAreaView.topAnchor.constraint(equalTo: firstAreaView.bottomAnchor,
-                                            constant: 10).isActive = true
-        secondAreaView.leadingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.leadingAnchor,
+    private func configureContainerStackView() {
+        containerStackView.topAnchor.constraint(equalTo: segmentedControl.bottomAnchor,
                                                 constant: 10).isActive = true
-        secondAreaView.trailingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.trailingAnchor,
-                                                 constant: -10).isActive = true
-        secondAreaView.heightAnchor.constraint(equalToConstant: containerViewHeight ?? 100).isActive = true
+        containerStackView.leadingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.leadingAnchor,
+                                                    constant: 10).isActive = true
+        containerStackView.trailingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.trailingAnchor,
+                                                     constant: -10).isActive = true
+        containerStackView.heightAnchor.constraint(lessThanOrEqualToConstant: 600).isActive = true
     }
     
-    private func configureThirdAreaView() {
-        thirdAreaView.topAnchor.constraint(equalTo: secondAreaView.bottomAnchor,
+    private func configurefooterView() {
+        footerView.leadingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.leadingAnchor,
                                             constant: 10).isActive = true
-        thirdAreaView.leadingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.leadingAnchor,
-                                               constant: 10).isActive = true
-        thirdAreaView.trailingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.trailingAnchor,
-                                                constant: -10).isActive = true
-        thirdAreaView.heightAnchor.constraint(equalToConstant: containerViewHeight ?? 100).isActive = true
-    }
-    
-    private func configureFourthAreaView() {
-        fourthAreaView.topAnchor.constraint(equalTo: thirdAreaView.bottomAnchor,
-                                            constant: 10).isActive = true
-        fourthAreaView.leadingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.leadingAnchor,
-                                                constant: 10).isActive = true
-        fourthAreaView.trailingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.trailingAnchor,
-                                                 constant: -10).isActive = true
-        fourthAreaView.heightAnchor.constraint(equalToConstant: containerViewHeight ?? 100).isActive = true
-    }
-    
-    private func configureFifthAreaView() {
-        fifthAreaView.topAnchor.constraint(equalTo: fourthAreaView.bottomAnchor,
-                                            constant: 10).isActive = true
-        fifthAreaView.leadingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.leadingAnchor,
-                                               constant: 10).isActive = true
-        fifthAreaView.trailingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.trailingAnchor,
-                                                constant: -10).isActive = true
-        fifthAreaView.heightAnchor.constraint(equalToConstant: containerViewHeight ?? 100).isActive = true
-    }
-    
-    private func configureFotterView() {
-        fotterView.topAnchor.constraint(equalTo: fifthAreaView.bottomAnchor,
-                                        constant: 10).isActive = true
-        fotterView.leadingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.leadingAnchor,
-                                            constant: 10).isActive = true
-        fotterView.trailingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.trailingAnchor,
+        footerView.trailingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.trailingAnchor,
                                              constant: -10).isActive = true
-        fotterView.bottomAnchor.constraint(equalTo: view.safeAreaLayoutGuide.bottomAnchor,
+        footerView.bottomAnchor.constraint(equalTo: view.safeAreaLayoutGuide.bottomAnchor,
                                            constant: -5).isActive = true
     }
     
-    private func createCardFactory() {
-        let cardFactory = DefaultCardFactory()
-        cardFactory.createCard()
-        let deck = DefaultDeck(deck: cardFactory.returnDeck())
-        deck.shuffle()
-        deck.printDeck()
+    private func initContainerViews(_ playerCount: Int) {
+        containerStackView.arrangedSubviews.enumerated().forEach { (idx, view) in
+            view.subviews.forEach { $0.removeFromSuperview() }
+            view.isHidden = !(idx < playerCount)
+        }
+    }
+    
+    private func initfooterView() {
+        footerView.subviews.forEach {
+            $0.removeFromSuperview()
+        }
+    }
+    
+    private func addCardViewsInContainerView(_ playerCount: Int) {
+        DefaultLuckyGameManager.shared.fetchPlayers(playerCount).enumerated().forEach { (idx, board) in
+            if let containerView = containerStackView.arrangedSubviews[idx] as? ContainerView {
+                containerView.areaLabel.isHidden = true
+                
+                let playerDeckCountType = DeckCountType.playerDeckCount(rawValue: board.deck.count) ?? .eight
+                let cardLeadingSpacing = playerDeckCountType.cardLeadingSpacing
+                let cardViewWidth = 60
+                
+                for (cardIndex, card) in board.deck.enumerated() {
+                    let cardView = CardView(card)
+                    if idx > 0 { cardView.lotation(false, card) }
+                    containerView.addSubview(cardView)
+                    cardView.leadingAnchor.constraint(equalTo: containerView.leadingAnchor,
+                                                      constant: CGFloat(6 + cardIndex * (cardViewWidth - cardLeadingSpacing))).isActive = true
+                    cardView.centerYAnchor.constraint(equalTo: containerView.centerYAnchor).isActive = true
+                }
+            }
+        }
+    }
+    
+    private func addCardViewsInfooterView(_ playerCount: Int) {
+        updatefooterViewConstraint(playerCount)
+        
+        let board = DefaultLuckyGameManager.shared.fetchGround()
+        let footerDeckCountType = DeckCountType.footerDeckCount(rawValue: board.deck.count) ?? .nine
+        let cardLeadingSpacing = footerDeckCountType.cardLeadingSpacing
+        let cardViewWidth = 60
+        
+        for (cardIndex, card) in board.deck.enumerated() {
+            let cardView = CardView(card)
+            let cardTopSpacing = footerDeckCountType.calculateCardTopSpacing(cardIndex)
+            let locationIndex = cardIndex % footerDeckCountType.cardCountInTop
+            cardView.lotation(false, card)
+            footerView.addSubview(cardView)
+            
+            cardView.leadingAnchor.constraint(equalTo: footerView.leadingAnchor,
+                                              constant: CGFloat(6 + locationIndex * (cardViewWidth - cardLeadingSpacing))).isActive = true
+            cardView.topAnchor.constraint(equalTo: footerView.topAnchor,
+                                          constant: CGFloat(cardTopSpacing)).isActive = true
+        }
+    }
+    
+    private func updatefooterViewConstraint(_ playerCount: Int) {
+        footerViewHeightConstraint?.isActive = false
+        footerViewHeightConstraint = footerView.heightAnchor.constraint(equalToConstant: playerCount == 5 ? 140 : 260)
+        footerViewHeightConstraint?.isActive = true
+    }
+    
+    // MARK: - Objc Functions
+    @objc private func didChangeControlValue(segment: UISegmentedControl) {
+        print(segment.titleForSegment(at: segment.selectedSegmentIndex) ?? "없음")
+        
+        let playerCount = PlayerCountType.allCases[segment.selectedSegmentIndex].rawValue
+        
+        DefaultLuckyGameManager.shared.divideCardToPlayers(playerCount)
+        DefaultLuckyGameManager.shared.printDescription()
+        
+        initContainerViews(playerCount)
+        initfooterView()
+        addCardViewsInContainerView(playerCount)
+        addCardViewsInfooterView(playerCount)
     }
 }

@@ -13,18 +13,17 @@ import Foundation
 private protocol CardFactory {
     var deck: [Card] { get }
     
-    func createCard()
+    func createDeck()
     func returnDeck() -> [Card]
 }
 
 final class DefaultCardFactory: CardFactory {
     fileprivate var deck: [Card] = []
     
-    func createCard() {
+    func createDeck() {
         for i in AnimalType.allCases {
             for j in CardNumberType.allCases {
-                let newCard = Card()
-                newCard.setInformation(i, j)
+                let newCard = Card(i, j)
                 deck.append(newCard)
             }
         }

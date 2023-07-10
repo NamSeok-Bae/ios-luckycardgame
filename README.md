@@ -1,25 +1,31 @@
-# 럭키카드 클래스 구현하기 (완료시간 7/5(화) 16:00)
+# 카드 나눠주기 (완료시간 7/9(일) 16:00)
 
 ## 학습내용
- - OOP, POP 학습하기
- - SOLID 원칙 학습하기
- - Class, Struct 학습하기
- - 클래스 구조 설계하기
- - OOP, POP 방식으로 설계 및 구현 도전
- - iOS의 메모리 스택
- - 타입별 메모리
+ - Struct와 Class의 사용 상황 깨달음
+ - lazy var 와 let의 차이
+ - Anchor 를 활용한 auto - Layout
+ - dropLast, popLast, removeLast 의 차이
+ - systemLayoutSizeFitting 함수
+ - UIGraphicsImage 를 활용하여 직접 이미지 생성
+ - nested enum 의 사용 방식
+ - intrinsicContentSize
 
 ## 작업 결과물
-<img width="90%" alt="image" src="https://github.com/team-dayeng/Dayeng/assets/76683388/6e533145-1329-49bf-b919-dc362e81ec91">
+<p align="center">
+<img width="50%" alt="image" src="https://github.com/team-dayeng/Dayeng/assets/76683388/7fcf2eda-8580-4e81-9643-558eaabb30af">
+</p>
 
 ## 작업 상세내용
-- SOLID 원칙을 지키는 방식으로 구현하였습니다.
-- Card, CardFactory, Deck 클래스가 서로 각각 연관되고 역할이 분담됩니다.
-    - animal과 숫자 등 정보를 담고있는 Card
-    - AnimalType이라는 Enum 에 따라 1~12 의 숫자를 가진 카드를 생성해주는 CardFactory
-    - CardFactory에서 만들어진 카드들을 '보관' 및 '섞기'를 맡은 Deck
-- AnimalType, CardNumberType Enum에서 CaseIterable을 채택하여 CardFactory에서 AnimalType과 CardNumberType의 모든 케이스를 불러와서 카드를 만들어주었습니다.
+- LuckyGameManager
+    - Divider, Players, Ground, Factory
+        - Card
+- 위와 같은 계층을 가집니다.
+- LuckyGameManager는 Singleton으로써 게임이 진행되는 동안 계속 유지되도록 하였습니다.
+- Factory는 카드를 만들어서 Divider에게 카드를 건내주고 소멸합니다.
+- Divider는 GameManager의 요청에 따라 Player 와 Ground에 카드를 배정합니다.
+- 카드를 놓는 로직은 수학적인 규칙을 기반으로 선정하였습니다.
+    - 카드의 갯수와 Index에 따라서 레이아웃 Contraint를 계산해주었습니다.
 
 ## 고민 내용
-- Card가 가질 수 있는 변수로는 동물, 숫자, 앞뒤 유무, 뒷면일 경우 이미지 라고 분석하였습니다. 
-- 뒤의 과제를 모르는 상태에서 Card를 설계한다면 Card 클래스에서 프로토콜로 역할을 확장해나가야하는 것이 좋은지 아니면 필요할 때마다 역할이 확장되는 것에 따라 Card 클래스를 변경해주는 것이 좋은지 판단이 서지않습니다.
+- 현재 레이아웃 Contraint는 특정한 상황에 대해서 점화식으로 이루어져있습니다.
+SubView들의 레이아웃, 크기에 따라서 UIView의 높이를 동적으로 지정해주고 싶었는데, UIView 자체는 intrinsicContentSize 가 없어서 계산하는데 실패하였습니다.
