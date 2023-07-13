@@ -1,23 +1,15 @@
 //
-//  LuckyCardGameTests.swift
-//  LuckyCardGameTests
+//  BoardTests.swift
+//  BoardTests
 //
-//  Created by 배남석 on 2023/07/04.
+//  Created by 배남석 on 2023/07/12.
 //
 
 import XCTest
-@testable import LuckyCardGame
+@testable import 럭키카드
 
-final class LuckyCardGameTests: XCTestCase {
-
-    override func setUpWithError() throws {
-        // Put setup code here. This method is called before the invocation of each test method in the class.
-    }
-
-    override func tearDownWithError() throws {
-        // Put teardown code here. This method is called after the invocation of each test method in the class.
-    }
-
+final class BoardTests: XCTestCase {
+    
     func testExample() throws {
         // This is an example of a functional test case.
         // Use XCTAssert and related functions to verify your tests produce the correct results.
@@ -28,7 +20,7 @@ final class LuckyCardGameTests: XCTestCase {
 
     func testPerformanceExample() throws {
         // This is an example of a performance test case.
-        self.measure {
+        measure {
             // Put the code you want to measure the time of here.
         }
     }
