@@ -69,7 +69,7 @@ class ViewController: UIViewController {
     }
     
     private func setupContainerStackVeiw() {
-        BoardNameType.allCases.dropLast(1).forEach {
+        BoardType.allCases.dropLast(1).forEach {
             containerStackView.addArrangedSubview(ContainerView(areaName: $0.name))
         }
     }

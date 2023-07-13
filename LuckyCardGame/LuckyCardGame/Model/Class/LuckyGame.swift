@@ -16,7 +16,7 @@ protocol LuckyGame: AnyObject {
     func sortGroundDeck()
     func divideCard(_ playerCount: Int)
     func requestFlippedCard(_ requestPlayerIndex: Int,
-                            _ targetType: BoardNameType,
+                            _ targetType: BoardType,
                             cardIndex: Int?,
                             flippedCardType: FlippedCardType?) -> DefaultLuckyCard
     func validatePlayerHaveThreeSameCard() -> [Bool]
@@ -39,7 +39,7 @@ class DefaultLuckyGame: LuckyGame {
         cardFactory.createDeck()
         divider = DefaultDivider(deck: cardFactory.returnDeck())
         
-        var boardNameTypeAllCases = BoardNameType.allCases
+        var boardNameTypeAllCases = BoardType.allCases
         ground = DefaultBoard(name: boardNameTypeAllCases.removeLast().name)
         players = boardNameTypeAllCases.map { DefaultPlayer(board: DefaultBoard(name: $0.name)) }
         
@@ -101,7 +101,7 @@ class DefaultLuckyGame: LuckyGame {
     
     // 현재 차례 플레이어가 특정 플레이어 또는 바닥에 있는 카드를 요청합니다.
     func requestFlippedCard(_ requestPlayerIndex: Int,
-                            _ targetType: BoardNameType,
+                            _ targetType: BoardType,
                             cardIndex: Int? = nil,
                             flippedCardType: FlippedCardType? = nil) -> DefaultLuckyCard {
         var flippedCard = DefaultLuckyCard()
