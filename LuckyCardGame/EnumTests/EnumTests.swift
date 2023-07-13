@@ -9,13 +9,6 @@ import XCTest
 @testable import 럭키카드
 
 final class EnumTests: XCTestCase {
-    
-    func testTargetType() {
-        for (idx, i) in TargetType.allCases.enumerated() {
-            XCTAssertEqual(i.rawValue, idx, "TargetType의 RawValue가 결과값과 다름.")
-        }
-    }
-    
     func testPlayerDeckCount() {
         let playerSixDeckCount = DeckCountType.playerDeckCount.six
         let playerSevenDeckCount = DeckCountType.playerDeckCount.seven
@@ -56,20 +49,20 @@ final class EnumTests: XCTestCase {
                        "Footer CardLeadingSpacing이 결과값과 다름.")
     }
     
-    func testBoardNameType() {
-        let firstBoardName = BoardNameType.first
-        let secondBoardName = BoardNameType.second
-        let thirdBoardName = BoardNameType.third
-        let fourthBoardName = BoardNameType.fourth
-        let fifthBoardName = BoardNameType.fifth
-        let groundBoardName = BoardNameType.ground
+    func testBoardType() {
+        let firstBoardName = BoardType.first
+        let secondBoardName = BoardType.second
+        let thirdBoardName = BoardType.third
+        let fourthBoardName = BoardType.fourth
+        let fifthBoardName = BoardType.fifth
+        let groundBoardName = BoardType.ground
         
-        XCTAssertEqual(firstBoardName.name, "A", "BoardNameType name과 결과값이 다름.")
-        XCTAssertEqual(secondBoardName.name, "B", "BoardNameType name과 결과값이 다름.")
-        XCTAssertEqual(thirdBoardName.name, "C", "BoardNameType name과 결과값이 다름.")
-        XCTAssertEqual(fourthBoardName.name, "D", "BoardNameType name과 결과값이 다름.")
-        XCTAssertEqual(fifthBoardName.name, "E", "BoardNameType name과 결과값이 다름.")
-        XCTAssertEqual(groundBoardName.name, "바닥", "BoardNameType name과 결과값이 다름.")
+        XCTAssertEqual(firstBoardName.name, "A", "BoardType name과 결과값이 다름.")
+        XCTAssertEqual(secondBoardName.name, "B", "BoardType name과 결과값이 다름.")
+        XCTAssertEqual(thirdBoardName.name, "C", "BoardType name과 결과값이 다름.")
+        XCTAssertEqual(fourthBoardName.name, "D", "BoardType name과 결과값이 다름.")
+        XCTAssertEqual(fifthBoardName.name, "E", "BoardType name과 결과값이 다름.")
+        XCTAssertEqual(groundBoardName.name, "바닥", "BoardType name과 결과값이 다름.")
     }
     
     func testPlayerCountType() {
