@@ -12,19 +12,23 @@ protocol Player: AnyObject {
     func getBoard() -> Board
     func setDeck(_ deck: [DefaultLuckyCard])
     func sortDeck()
+    func appedMatchedCards(_ flippedCards: [DefaultLuckyCard])
     func flippedCard(_ flippedCardType: FlippedCardType) -> DefaultLuckyCard
     func deFlippedCard(_ flippedCards: [DefaultLuckyCard])
 }
 
 class DefaultPlayer: Player {
     private var board: Board
+    private var matchedCards: [[DefaultLuckyCard]]
     
     init() {
         board = DefaultBoard()
+        matchedCards = []
     }
     
     init(board: Board) {
         self.board = board
+        matchedCards = []
     }
     
     func setBoard(_ board: Board) {
@@ -41,6 +45,10 @@ class DefaultPlayer: Player {
     
     func sortDeck() {
         board.sortDeck()
+    }
+    
+    func appedMatchedCards(_ flippedCards: [DefaultLuckyCard]) {
+        self.matchedCards.append(flippedCards)
     }
     
     func flippedCard(_ flippedCardType: FlippedCardType) -> DefaultLuckyCard {
