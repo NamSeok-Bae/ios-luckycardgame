@@ -177,8 +177,6 @@ class ViewController: UIViewController {
     
     // MARK: - Objc Functions
     @objc private func didChangeControlValue(segment: UISegmentedControl) {
-//        print(segment.titleForSegment(at: segment.selectedSegmentIndex) ?? "없음")
-        
         let playerCount = PlayerCountType.allCases[segment.selectedSegmentIndex].rawValue
         luckyGame.initGame(playerCount)
         
