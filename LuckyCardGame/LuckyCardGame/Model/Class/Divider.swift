@@ -7,20 +7,15 @@
 
 import Foundation
 
-/*
- Deck은 카드 보관 뿐만 아니라 섞이고, 출력하는 기능을 담당합니다.
- */
-private protocol Divider {
-    var deck: [Card] { get set }
-    
-    func deckShuffle()
-    func divideToPlyers(_ playerCount: Int) -> [[Card]]
-    func printDeck()
-    func setDeck(_ deck: [Card])
+protocol Divider: AnyObject {
+    func divideToPlayers(_ playerCount: Int) -> [[DefaultLuckyCard]]
+    func setDeck(_ deck: [DefaultLuckyCard])
+    func getDeck() -> [DefaultLuckyCard]
+    func getDeckCount() -> Int
 }
 
-final class DefaultDivider: Divider {
-    fileprivate var deck: [Card]
+class DefaultDivider: Divider {
+    private var deck: [DefaultLuckyCard]
     private var deckCount: Int
     
     init() {
@@ -28,17 +23,31 @@ final class DefaultDivider: Divider {
         self.deckCount = 0
     }
     
-    init(deck: [Card]) {
+    init(deck: [DefaultLuckyCard]) {
         self.deck = deck
         self.deckCount = deck.count
     }
     
-    fileprivate func deckShuffle() {
+    func setDeck(_ deck: [DefaultLuckyCard]) {
+        self.deck = deck
+        self.deckCount = deck.count
+    }
+    
+    func getDeck() -> [DefaultLuckyCard] {
+        return deck
+    }
+    
+    func getDeckCount() -> Int {
+        return deckCount
+    }
+    
+    private func shuffleDeck() {
         self.deck.shuffle()
     }
     
-    func divideToPlyers(_ playerCount: Int) -> [[Card]] {
-        deckShuffle()
+    // 덱을 섞은 후 사람 수에 따라 카드 분배 순서를 계산해 반환해줍니다.
+    func divideToPlayers(_ playerCount: Int) -> [[DefaultLuckyCard]] {
+        shuffleDeck()
         if playerCount == 3 {
             return divideThreePlayer(playerCount)
         } else {
@@ -46,12 +55,12 @@ final class DefaultDivider: Divider {
         }
     }
     
-    private func divideThreePlayer(_ playerCount: Int) -> [[Card]] {
-        var dividedCardToPlayers: [[Card]] = Array(repeating: [Card](), count: playerCount + 1)
+    private func divideThreePlayer(_ playerCount: Int) -> [[DefaultLuckyCard]] {
+        var dividedCardToPlayers: [[DefaultLuckyCard]] = Array(repeating: [DefaultLuckyCard](), count: playerCount + 1)
         var curIndex = 0
         let excludeCardNumber = 12
         
-        let filterDeck = deck.filter { $0.number != excludeCardNumber }
+        let filterDeck = deck.filter { $0.getNumber() != excludeCardNumber }
         let filterDeckCount = filterDeck.count
         
         filterDeck.enumerated().forEach { (idx, card) in
@@ -66,8 +75,8 @@ final class DefaultDivider: Divider {
         return dividedCardToPlayers
     }
     
-    private func divideMultiplePlayers(_ playerCount: Int) -> [[Card]] {
-        var dividedCardToPlayers: [[Card]] = Array(repeating: [Card](), count: playerCount + 1)
+    private func divideMultiplePlayers(_ playerCount: Int) -> [[DefaultLuckyCard]] {
+        var dividedCardToPlayers: [[DefaultLuckyCard]] = Array(repeating: [DefaultLuckyCard](), count: playerCount + 1)
         var curIndex = 0
         for (idx, i) in deck.enumerated() {
             if idx < (deckCount / (playerCount + 1)) * playerCount {
@@ -79,14 +88,5 @@ final class DefaultDivider: Divider {
         }
         
         return dividedCardToPlayers
-    }
-    
-    func setDeck(_ deck: [Card]) {
-        self.deck = deck
-        self.deckCount = deck.count
-    }
-    
-    func printDeck() {
-        print(deck.map { $0.description }.joined(separator: ", "))
     }
 }
