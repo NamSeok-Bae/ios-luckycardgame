@@ -7,34 +7,45 @@
 
 import Foundation
 
-private protocol BoardInfomation {
-    var deck: [Card] { get set }
-    var name: String { get set }
+protocol Board {
+    func getDeck() -> [DefaultLuckyCard]
+    func getName() -> String
+    mutating func setDeck(_ deck: [DefaultLuckyCard])
+}
+
+struct DefaultBoard: Board {
+    private var deck: [DefaultLuckyCard]
+    private var name: String
     
-    mutating func takeDeck(_ deck: [Card])
-}
-
-extension BoardInfomation {
-    mutating func takeDeck(_ deck: [Card]) {
-        self.deck = deck
+    init() {
+        self.deck = [DefaultLuckyCard]()
+        self.name = "Nil"
     }
-}
-
-struct Board: BoardInfomation {
-    var deck: [Card]
-    var name: String
     
     init(name: String) {
         self.name = name
-        self.deck = []
+        self.deck = [DefaultLuckyCard]()
     }
     
-    init(deck: [Card], name: String) {
+    init(deck: [DefaultLuckyCard], name: String) {
         self.deck = deck
         self.name = name
     }
     
-    mutating func takeDeck(_ deck: [Card]) {
+    init(deck: [DefaultLuckyCard]) {
+        self.deck = deck
+        self.name = "Nil"
+    }
+    
+    func getDeck() -> [DefaultLuckyCard] {
+        return deck
+    }
+    
+    func getName() -> String {
+        return name
+    }
+    
+    mutating func setDeck(_ deck: [DefaultLuckyCard]) {
         self.deck = deck
     }
 }
