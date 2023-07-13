@@ -13,19 +13,10 @@
 		645699912A5FC72A000A39BC /* CardNumberType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64E619672A555C93001030F4 /* CardNumberType.swift */; };
 		645699922A5FC72A000A39BC /* DeckCountType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64E6198C2A595A0A001030F4 /* DeckCountType.swift */; };
 		645699932A5FC72A000A39BC /* AnimalType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64E6195A2A5514A2001030F4 /* AnimalType.swift */; };
-		645699942A5FC72A000A39BC /* TargetType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64C277472A5F9E150033C563 /* TargetType.swift */; };
 		645699952A5FC72A000A39BC /* FlippedCardType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64C4092C2A5EF8640073309C /* FlippedCardType.swift */; };
 		64C277432A5F97890033C563 /* MockValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64C2773C2A5F94A70033C563 /* MockValidator.swift */; };
 		64C277452A5F97890033C563 /* MockGround.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64C277402A5F94C50033C563 /* MockGround.swift */; };
 		64C277462A5F97890033C563 /* MockDivider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64E61A122A5E9923001030F4 /* MockDivider.swift */; };
-		64C277482A5F9E150033C563 /* TargetType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64C277472A5F9E150033C563 /* TargetType.swift */; };
-		64C277492A5F9EB20033C563 /* TargetType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64C277472A5F9E150033C563 /* TargetType.swift */; };
-		64C2774A2A5F9EE40033C563 /* TargetType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64C277472A5F9E150033C563 /* TargetType.swift */; };
-		64C2774B2A5F9EE40033C563 /* TargetType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64C277472A5F9E150033C563 /* TargetType.swift */; };
-		64C2774C2A5F9EE40033C563 /* TargetType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64C277472A5F9E150033C563 /* TargetType.swift */; };
-		64C2774D2A5F9EE50033C563 /* TargetType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64C277472A5F9E150033C563 /* TargetType.swift */; };
-		64C2774E2A5F9EE50033C563 /* TargetType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64C277472A5F9E150033C563 /* TargetType.swift */; };
-		64C2774F2A5F9EE50033C563 /* TargetType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64C277472A5F9E150033C563 /* TargetType.swift */; };
 		64C4090C2A5E9F460073309C /* PlayerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64C4090B2A5E9F460073309C /* PlayerTests.swift */; };
 		64C409122A5E9F540073309C /* Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64E619BD2A5D2AD1001030F4 /* Player.swift */; };
 		64C409132A5E9F580073309C /* Board.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64E6196B2A5690D0001030F4 /* Board.swift */; };
@@ -214,7 +205,6 @@
 		645699882A5FC722000A39BC /* EnumTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnumTests.swift; sourceTree = "<group>"; };
 		64C2773C2A5F94A70033C563 /* MockValidator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockValidator.swift; sourceTree = "<group>"; };
 		64C277402A5F94C50033C563 /* MockGround.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockGround.swift; sourceTree = "<group>"; };
-		64C277472A5F9E150033C563 /* TargetType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TargetType.swift; sourceTree = "<group>"; };
 		64C409092A5E9F460073309C /* PlayerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PlayerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		64C4090B2A5E9F460073309C /* PlayerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerTests.swift; sourceTree = "<group>"; };
 		64C4091B2A5EA4BE0073309C /* BoardTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BoardTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -476,7 +466,6 @@
 				64E619692A565ABE001030F4 /* PlayerCountType.swift */,
 				64E6196F2A56B154001030F4 /* BoardNameType.swift */,
 				64E6198C2A595A0A001030F4 /* DeckCountType.swift */,
-				64C277472A5F9E150033C563 /* TargetType.swift */,
 				64C4092C2A5EF8640073309C /* FlippedCardType.swift */,
 			);
 			path = Enum;
@@ -854,7 +843,6 @@
 				6456998F2A5FC72A000A39BC /* BoardNameType.swift in Sources */,
 				645699922A5FC72A000A39BC /* DeckCountType.swift in Sources */,
 				645699932A5FC72A000A39BC /* AnimalType.swift in Sources */,
-				645699942A5FC72A000A39BC /* TargetType.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -876,7 +864,6 @@
 				64C4097A2A5F001D0073309C /* Divider.swift in Sources */,
 				64C409782A5F001D0073309C /* LuckyCardFactory.swift in Sources */,
 				64C409132A5E9F580073309C /* Board.swift in Sources */,
-				64C2774E2A5F9EE50033C563 /* TargetType.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -898,7 +885,6 @@
 				64C409752A5F001D0073309C /* Divider.swift in Sources */,
 				64C409422A5EFEC50073309C /* FlippedCardType.swift in Sources */,
 				64C409722A5F001D0073309C /* LuckyCardFactory.swift in Sources */,
-				64C2774D2A5F9EE50033C563 /* TargetType.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -920,7 +906,6 @@
 				64C4095F2A5F00160073309C /* PlayerCountType.swift in Sources */,
 				64C4093C2A5EFE700073309C /* LuckyCard.swift in Sources */,
 				64C4097F2A5F001D0073309C /* Divider.swift in Sources */,
-				64C2774F2A5F9EE50033C563 /* TargetType.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -928,7 +913,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				64C277492A5F9EB20033C563 /* TargetType.swift in Sources */,
 				64C409992A5F06930073309C /* LuckyGame.swift in Sources */,
 				64C409952A5F068F0073309C /* FlippedCardType.swift in Sources */,
 				64C409912A5F068F0073309C /* CardNumberType.swift in Sources */,
@@ -953,7 +937,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				64C277482A5F9E150033C563 /* TargetType.swift in Sources */,
 				64E6195F2A551A57001030F4 /* Divider.swift in Sources */,
 				64E619702A56B154001030F4 /* BoardNameType.swift in Sources */,
 				64E619462A5410C0001030F4 /* ContainerView.swift in Sources */,
@@ -997,7 +980,6 @@
 				64E61A052A5E95CC001030F4 /* AnimalType.swift in Sources */,
 				64C409802A5F00200073309C /* Board.swift in Sources */,
 				64C4094F2A5F00140073309C /* BoardNameType.swift in Sources */,
-				64C2774A2A5F9EE40033C563 /* TargetType.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1019,7 +1001,6 @@
 				64E619F22A5E929E001030F4 /* AnimalType.swift in Sources */,
 				64C409812A5F00200073309C /* Board.swift in Sources */,
 				64C409532A5F00140073309C /* FlippedCardType.swift in Sources */,
-				64C2774B2A5F9EE40033C563 /* TargetType.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1041,7 +1022,6 @@
 				64C409582A5F00150073309C /* BoardNameType.swift in Sources */,
 				64C4096E2A5F001C0073309C /* Player.swift in Sources */,
 				64C409462A5EFF1A0073309C /* FlippedCardType.swift in Sources */,
-				64C2774C2A5F9EE40033C563 /* TargetType.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
