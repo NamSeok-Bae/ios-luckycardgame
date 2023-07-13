@@ -7,41 +7,200 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		645699892A5FC722000A39BC /* EnumTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 645699882A5FC722000A39BC /* EnumTests.swift */; };
+		6456998F2A5FC72A000A39BC /* BoardNameType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64E6196F2A56B154001030F4 /* BoardNameType.swift */; };
+		645699902A5FC72A000A39BC /* PlayerCountType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64E619692A565ABE001030F4 /* PlayerCountType.swift */; };
+		645699912A5FC72A000A39BC /* CardNumberType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64E619672A555C93001030F4 /* CardNumberType.swift */; };
+		645699922A5FC72A000A39BC /* DeckCountType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64E6198C2A595A0A001030F4 /* DeckCountType.swift */; };
+		645699932A5FC72A000A39BC /* AnimalType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64E6195A2A5514A2001030F4 /* AnimalType.swift */; };
+		645699942A5FC72A000A39BC /* TargetType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64C277472A5F9E150033C563 /* TargetType.swift */; };
+		645699952A5FC72A000A39BC /* FlippedCardType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64C4092C2A5EF8640073309C /* FlippedCardType.swift */; };
+		64C277432A5F97890033C563 /* MockValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64C2773C2A5F94A70033C563 /* MockValidator.swift */; };
+		64C277452A5F97890033C563 /* MockGround.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64C277402A5F94C50033C563 /* MockGround.swift */; };
+		64C277462A5F97890033C563 /* MockDivider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64E61A122A5E9923001030F4 /* MockDivider.swift */; };
+		64C277482A5F9E150033C563 /* TargetType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64C277472A5F9E150033C563 /* TargetType.swift */; };
+		64C277492A5F9EB20033C563 /* TargetType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64C277472A5F9E150033C563 /* TargetType.swift */; };
+		64C2774A2A5F9EE40033C563 /* TargetType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64C277472A5F9E150033C563 /* TargetType.swift */; };
+		64C2774B2A5F9EE40033C563 /* TargetType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64C277472A5F9E150033C563 /* TargetType.swift */; };
+		64C2774C2A5F9EE40033C563 /* TargetType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64C277472A5F9E150033C563 /* TargetType.swift */; };
+		64C2774D2A5F9EE50033C563 /* TargetType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64C277472A5F9E150033C563 /* TargetType.swift */; };
+		64C2774E2A5F9EE50033C563 /* TargetType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64C277472A5F9E150033C563 /* TargetType.swift */; };
+		64C2774F2A5F9EE50033C563 /* TargetType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64C277472A5F9E150033C563 /* TargetType.swift */; };
+		64C4090C2A5E9F460073309C /* PlayerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64C4090B2A5E9F460073309C /* PlayerTests.swift */; };
+		64C409122A5E9F540073309C /* Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64E619BD2A5D2AD1001030F4 /* Player.swift */; };
+		64C409132A5E9F580073309C /* Board.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64E6196B2A5690D0001030F4 /* Board.swift */; };
+		64C409142A5E9F5F0073309C /* LuckyCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64E6194A2A55021A001030F4 /* LuckyCard.swift */; };
+		64C409152A5E9F670073309C /* AnimalType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64E6195A2A5514A2001030F4 /* AnimalType.swift */; };
+		64C409162A5E9F690073309C /* CardNumberType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64E619672A555C93001030F4 /* CardNumberType.swift */; };
+		64C4091E2A5EA4BE0073309C /* BoardTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64C4091D2A5EA4BE0073309C /* BoardTests.swift */; };
+		64C409242A5EA4C20073309C /* Board.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64E6196B2A5690D0001030F4 /* Board.swift */; };
+		64C409252A5EA4C60073309C /* AnimalType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64E6195A2A5514A2001030F4 /* AnimalType.swift */; };
+		64C409262A5EA4C80073309C /* CardNumberType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64E619672A555C93001030F4 /* CardNumberType.swift */; };
+		64C409272A5EA67B0073309C /* LuckyCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64E6194A2A55021A001030F4 /* LuckyCard.swift */; };
+		64C409292A5EAA6E0073309C /* LuckyGame.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64C409282A5EAA6E0073309C /* LuckyGame.swift */; };
+		64C4092B2A5EEA440073309C /* Validator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64C4092A2A5EEA440073309C /* Validator.swift */; };
+		64C4092D2A5EF8640073309C /* FlippedCardType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64C4092C2A5EF8640073309C /* FlippedCardType.swift */; };
+		64C409352A5EFE4C0073309C /* ValidatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64C409342A5EFE4C0073309C /* ValidatorTests.swift */; };
+		64C4093B2A5EFE6C0073309C /* Validator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64C4092A2A5EEA440073309C /* Validator.swift */; };
+		64C4093C2A5EFE700073309C /* LuckyCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64E6194A2A55021A001030F4 /* LuckyCard.swift */; };
+		64C4093D2A5EFE940073309C /* CardNumberType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64E619672A555C93001030F4 /* CardNumberType.swift */; };
+		64C4093E2A5EFE960073309C /* AnimalType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64E6195A2A5514A2001030F4 /* AnimalType.swift */; };
+		64C409422A5EFEC50073309C /* FlippedCardType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64C4092C2A5EF8640073309C /* FlippedCardType.swift */; };
+		64C409442A5EFECB0073309C /* FlippedCardType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64C4092C2A5EF8640073309C /* FlippedCardType.swift */; };
+		64C409462A5EFF1A0073309C /* FlippedCardType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64C4092C2A5EF8640073309C /* FlippedCardType.swift */; };
+		64C409472A5EFF330073309C /* FlippedCardType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64C4092C2A5EF8640073309C /* FlippedCardType.swift */; };
+		64C409492A5EFF8C0073309C /* Board.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64E6196B2A5690D0001030F4 /* Board.swift */; };
+		64C4094A2A5EFF8D0073309C /* Board.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64E6196B2A5690D0001030F4 /* Board.swift */; };
+		64C4094B2A5EFFF40073309C /* Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64E619BD2A5D2AD1001030F4 /* Player.swift */; };
+		64C4094C2A5F00140073309C /* PlayerCountType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64E619692A565ABE001030F4 /* PlayerCountType.swift */; };
+		64C4094D2A5F00140073309C /* DeckCountType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64E6198C2A595A0A001030F4 /* DeckCountType.swift */; };
+		64C4094E2A5F00140073309C /* FlippedCardType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64C4092C2A5EF8640073309C /* FlippedCardType.swift */; };
+		64C4094F2A5F00140073309C /* BoardNameType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64E6196F2A56B154001030F4 /* BoardNameType.swift */; };
+		64C409512A5F00140073309C /* PlayerCountType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64E619692A565ABE001030F4 /* PlayerCountType.swift */; };
+		64C409522A5F00140073309C /* DeckCountType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64E6198C2A595A0A001030F4 /* DeckCountType.swift */; };
+		64C409532A5F00140073309C /* FlippedCardType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64C4092C2A5EF8640073309C /* FlippedCardType.swift */; };
+		64C409542A5F00140073309C /* BoardNameType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64E6196F2A56B154001030F4 /* BoardNameType.swift */; };
+		64C409562A5F00150073309C /* PlayerCountType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64E619692A565ABE001030F4 /* PlayerCountType.swift */; };
+		64C409572A5F00150073309C /* DeckCountType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64E6198C2A595A0A001030F4 /* DeckCountType.swift */; };
+		64C409582A5F00150073309C /* BoardNameType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64E6196F2A56B154001030F4 /* BoardNameType.swift */; };
+		64C409592A5F00150073309C /* PlayerCountType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64E619692A565ABE001030F4 /* PlayerCountType.swift */; };
+		64C4095A2A5F00150073309C /* DeckCountType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64E6198C2A595A0A001030F4 /* DeckCountType.swift */; };
+		64C4095B2A5F00150073309C /* BoardNameType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64E6196F2A56B154001030F4 /* BoardNameType.swift */; };
+		64C4095C2A5F00160073309C /* PlayerCountType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64E619692A565ABE001030F4 /* PlayerCountType.swift */; };
+		64C4095D2A5F00160073309C /* DeckCountType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64E6198C2A595A0A001030F4 /* DeckCountType.swift */; };
+		64C4095E2A5F00160073309C /* BoardNameType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64E6196F2A56B154001030F4 /* BoardNameType.swift */; };
+		64C4095F2A5F00160073309C /* PlayerCountType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64E619692A565ABE001030F4 /* PlayerCountType.swift */; };
+		64C409602A5F00160073309C /* DeckCountType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64E6198C2A595A0A001030F4 /* DeckCountType.swift */; };
+		64C409612A5F00160073309C /* BoardNameType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64E6196F2A56B154001030F4 /* BoardNameType.swift */; };
+		64C409632A5F001B0073309C /* Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64E619BD2A5D2AD1001030F4 /* Player.swift */; };
+		64C409642A5F001B0073309C /* LuckyGame.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64C409282A5EAA6E0073309C /* LuckyGame.swift */; };
+		64C409652A5F001B0073309C /* Divider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64E6195E2A551A57001030F4 /* Divider.swift */; };
+		64C409662A5F001B0073309C /* Validator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64C4092A2A5EEA440073309C /* Validator.swift */; };
+		64C409682A5F001B0073309C /* LuckyCardFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64E6195C2A551A4C001030F4 /* LuckyCardFactory.swift */; };
+		64C409692A5F001B0073309C /* Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64E619BD2A5D2AD1001030F4 /* Player.swift */; };
+		64C4096A2A5F001B0073309C /* LuckyGame.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64C409282A5EAA6E0073309C /* LuckyGame.swift */; };
+		64C4096B2A5F001B0073309C /* Divider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64E6195E2A551A57001030F4 /* Divider.swift */; };
+		64C4096C2A5F001B0073309C /* Validator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64C4092A2A5EEA440073309C /* Validator.swift */; };
+		64C4096E2A5F001C0073309C /* Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64E619BD2A5D2AD1001030F4 /* Player.swift */; };
+		64C4096F2A5F001C0073309C /* LuckyGame.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64C409282A5EAA6E0073309C /* LuckyGame.swift */; };
+		64C409702A5F001C0073309C /* Validator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64C4092A2A5EEA440073309C /* Validator.swift */; };
+		64C409722A5F001D0073309C /* LuckyCardFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64E6195C2A551A4C001030F4 /* LuckyCardFactory.swift */; };
+		64C409732A5F001D0073309C /* Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64E619BD2A5D2AD1001030F4 /* Player.swift */; };
+		64C409742A5F001D0073309C /* LuckyGame.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64C409282A5EAA6E0073309C /* LuckyGame.swift */; };
+		64C409752A5F001D0073309C /* Divider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64E6195E2A551A57001030F4 /* Divider.swift */; };
+		64C409762A5F001D0073309C /* Validator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64C4092A2A5EEA440073309C /* Validator.swift */; };
+		64C409782A5F001D0073309C /* LuckyCardFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64E6195C2A551A4C001030F4 /* LuckyCardFactory.swift */; };
+		64C409792A5F001D0073309C /* LuckyGame.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64C409282A5EAA6E0073309C /* LuckyGame.swift */; };
+		64C4097A2A5F001D0073309C /* Divider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64E6195E2A551A57001030F4 /* Divider.swift */; };
+		64C4097B2A5F001D0073309C /* Validator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64C4092A2A5EEA440073309C /* Validator.swift */; };
+		64C4097D2A5F001D0073309C /* LuckyCardFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64E6195C2A551A4C001030F4 /* LuckyCardFactory.swift */; };
+		64C4097E2A5F001D0073309C /* LuckyGame.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64C409282A5EAA6E0073309C /* LuckyGame.swift */; };
+		64C4097F2A5F001D0073309C /* Divider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64E6195E2A551A57001030F4 /* Divider.swift */; };
+		64C409802A5F00200073309C /* Board.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64E6196B2A5690D0001030F4 /* Board.swift */; };
+		64C409812A5F00200073309C /* Board.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64E6196B2A5690D0001030F4 /* Board.swift */; };
+		64C409892A5F06890073309C /* LuckyGameTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64C409882A5F06890073309C /* LuckyGameTests.swift */; };
+		64C4098F2A5F068F0073309C /* BoardNameType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64E6196F2A56B154001030F4 /* BoardNameType.swift */; };
+		64C409902A5F068F0073309C /* PlayerCountType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64E619692A565ABE001030F4 /* PlayerCountType.swift */; };
+		64C409912A5F068F0073309C /* CardNumberType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64E619672A555C93001030F4 /* CardNumberType.swift */; };
+		64C409922A5F068F0073309C /* DeckCountType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64E6198C2A595A0A001030F4 /* DeckCountType.swift */; };
+		64C409932A5F068F0073309C /* AnimalType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64E6195A2A5514A2001030F4 /* AnimalType.swift */; };
+		64C409952A5F068F0073309C /* FlippedCardType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64C4092C2A5EF8640073309C /* FlippedCardType.swift */; };
+		64C409962A5F06930073309C /* Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64E619BD2A5D2AD1001030F4 /* Player.swift */; };
+		64C409972A5F06930073309C /* Divider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64E6195E2A551A57001030F4 /* Divider.swift */; };
+		64C409992A5F06930073309C /* LuckyGame.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64C409282A5EAA6E0073309C /* LuckyGame.swift */; };
+		64C4099A2A5F06930073309C /* LuckyCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64E6194A2A55021A001030F4 /* LuckyCard.swift */; };
+		64C4099B2A5F06930073309C /* LuckyCardFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64E6195C2A551A4C001030F4 /* LuckyCardFactory.swift */; };
+		64C4099C2A5F06930073309C /* Validator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64C4092A2A5EEA440073309C /* Validator.swift */; };
+		64C4099D2A5F06960073309C /* Board.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64E6196B2A5690D0001030F4 /* Board.swift */; };
 		64E619132A540E41001030F4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64E619122A540E41001030F4 /* AppDelegate.swift */; };
 		64E619152A540E41001030F4 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64E619142A540E41001030F4 /* SceneDelegate.swift */; };
 		64E619172A540E41001030F4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64E619162A540E41001030F4 /* ViewController.swift */; };
 		64E6191C2A540E42001030F4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 64E6191B2A540E42001030F4 /* Assets.xcassets */; };
 		64E6191F2A540E42001030F4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 64E6191D2A540E42001030F4 /* LaunchScreen.storyboard */; };
-		64E6192A2A540E42001030F4 /* LuckyCardGameTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64E619292A540E42001030F4 /* LuckyCardGameTests.swift */; };
-		64E619342A540E42001030F4 /* LuckyCardGameUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64E619332A540E42001030F4 /* LuckyCardGameUITests.swift */; };
-		64E619362A540E42001030F4 /* LuckyCardGameUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64E619352A540E42001030F4 /* LuckyCardGameUITestsLaunchTests.swift */; };
 		64E619462A5410C0001030F4 /* ContainerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64E619452A5410C0001030F4 /* ContainerView.swift */; };
-		64E6194B2A55021A001030F4 /* Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64E6194A2A55021A001030F4 /* Card.swift */; };
+		64E6194B2A55021A001030F4 /* LuckyCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64E6194A2A55021A001030F4 /* LuckyCard.swift */; };
 		64E6195B2A5514A2001030F4 /* AnimalType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64E6195A2A5514A2001030F4 /* AnimalType.swift */; };
-		64E6195D2A551A4C001030F4 /* CardFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64E6195C2A551A4C001030F4 /* CardFactory.swift */; };
+		64E6195D2A551A4C001030F4 /* LuckyCardFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64E6195C2A551A4C001030F4 /* LuckyCardFactory.swift */; };
 		64E6195F2A551A57001030F4 /* Divider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64E6195E2A551A57001030F4 /* Divider.swift */; };
 		64E619662A554E11001030F4 /* UIView+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64E619652A554E11001030F4 /* UIView+.swift */; };
 		64E619682A555C93001030F4 /* CardNumberType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64E619672A555C93001030F4 /* CardNumberType.swift */; };
 		64E6196A2A565ABE001030F4 /* PlayerCountType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64E619692A565ABE001030F4 /* PlayerCountType.swift */; };
 		64E6196C2A5690D0001030F4 /* Board.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64E6196B2A5690D0001030F4 /* Board.swift */; };
-		64E6196E2A569C0B001030F4 /* DefaultLuckyGameManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64E6196D2A569C0B001030F4 /* DefaultLuckyGameManager.swift */; };
 		64E619702A56B154001030F4 /* BoardNameType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64E6196F2A56B154001030F4 /* BoardNameType.swift */; };
 		64E619722A56C4CC001030F4 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64E619712A56C4CC001030F4 /* CardView.swift */; };
 		64E619742A57B3D2001030F4 /* UILabel+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64E619732A57B3D2001030F4 /* UILabel+.swift */; };
 		64E619762A57C341001030F4 /* String+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64E619752A57C341001030F4 /* String+.swift */; };
 		64E6198D2A595A0A001030F4 /* DeckCountType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64E6198C2A595A0A001030F4 /* DeckCountType.swift */; };
 		64E6198F2A5981A4001030F4 /* UIImage+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64E6198E2A5981A4001030F4 /* UIImage+.swift */; };
+		64E619BE2A5D2AD1001030F4 /* Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64E619BD2A5D2AD1001030F4 /* Player.swift */; };
+		64E619DD2A5E8FF4001030F4 /* LuckyCardFactoryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64E619DC2A5E8FF4001030F4 /* LuckyCardFactoryTests.swift */; };
+		64E619EB2A5E924B001030F4 /* LuckyCardTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64E619EA2A5E924B001030F4 /* LuckyCardTests.swift */; };
+		64E619F12A5E925A001030F4 /* LuckyCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64E6194A2A55021A001030F4 /* LuckyCard.swift */; };
+		64E619F22A5E929E001030F4 /* AnimalType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64E6195A2A5514A2001030F4 /* AnimalType.swift */; };
+		64E619F32A5E92A1001030F4 /* CardNumberType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64E619672A555C93001030F4 /* CardNumberType.swift */; };
+		64E619FB2A5E9520001030F4 /* DividerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64E619FA2A5E9520001030F4 /* DividerTests.swift */; };
+		64E61A012A5E9538001030F4 /* Divider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64E6195E2A551A57001030F4 /* Divider.swift */; };
+		64E61A042A5E9577001030F4 /* LuckyCardFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64E6195C2A551A4C001030F4 /* LuckyCardFactory.swift */; };
+		64E61A052A5E95CC001030F4 /* AnimalType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64E6195A2A5514A2001030F4 /* AnimalType.swift */; };
+		64E61A062A5E95CE001030F4 /* CardNumberType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64E619672A555C93001030F4 /* CardNumberType.swift */; };
+		64E61A072A5E95F8001030F4 /* LuckyCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64E6194A2A55021A001030F4 /* LuckyCard.swift */; };
+		64E61A082A5E9623001030F4 /* LuckyCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64E6194A2A55021A001030F4 /* LuckyCard.swift */; };
+		64E61A092A5E9626001030F4 /* LuckyCardFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64E6195C2A551A4C001030F4 /* LuckyCardFactory.swift */; };
+		64E61A0A2A5E9636001030F4 /* AnimalType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64E6195A2A5514A2001030F4 /* AnimalType.swift */; };
+		64E61A0B2A5E9639001030F4 /* CardNumberType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64E619672A555C93001030F4 /* CardNumberType.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		64E619262A540E42001030F4 /* PBXContainerItemProxy */ = {
+		6456998A2A5FC722000A39BC /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 64E619072A540E41001030F4 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 64E6190E2A540E41001030F4;
 			remoteInfo = LuckyCardGame;
 		};
-		64E619302A540E42001030F4 /* PBXContainerItemProxy */ = {
+		64C4090D2A5E9F460073309C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 64E619072A540E41001030F4 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 64E6190E2A540E41001030F4;
+			remoteInfo = LuckyCardGame;
+		};
+		64C4091F2A5EA4BE0073309C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 64E619072A540E41001030F4 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 64E6190E2A540E41001030F4;
+			remoteInfo = LuckyCardGame;
+		};
+		64C409362A5EFE4C0073309C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 64E619072A540E41001030F4 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 64E6190E2A540E41001030F4;
+			remoteInfo = LuckyCardGame;
+		};
+		64C4098A2A5F06890073309C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 64E619072A540E41001030F4 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 64E6190E2A540E41001030F4;
+			remoteInfo = LuckyCardGame;
+		};
+		64E619DE2A5E8FF4001030F4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 64E619072A540E41001030F4 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 64E6190E2A540E41001030F4;
+			remoteInfo = LuckyCardGame;
+		};
+		64E619EC2A5E924B001030F4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 64E619072A540E41001030F4 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 64E6190E2A540E41001030F4;
+			remoteInfo = LuckyCardGame;
+		};
+		64E619FC2A5E9520001030F4 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 64E619072A540E41001030F4 /* Project object */;
 			proxyType = 1;
@@ -51,6 +210,22 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		645699862A5FC722000A39BC /* EnumTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EnumTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		645699882A5FC722000A39BC /* EnumTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnumTests.swift; sourceTree = "<group>"; };
+		64C2773C2A5F94A70033C563 /* MockValidator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockValidator.swift; sourceTree = "<group>"; };
+		64C277402A5F94C50033C563 /* MockGround.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockGround.swift; sourceTree = "<group>"; };
+		64C277472A5F9E150033C563 /* TargetType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TargetType.swift; sourceTree = "<group>"; };
+		64C409092A5E9F460073309C /* PlayerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PlayerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		64C4090B2A5E9F460073309C /* PlayerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerTests.swift; sourceTree = "<group>"; };
+		64C4091B2A5EA4BE0073309C /* BoardTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BoardTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		64C4091D2A5EA4BE0073309C /* BoardTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoardTests.swift; sourceTree = "<group>"; };
+		64C409282A5EAA6E0073309C /* LuckyGame.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LuckyGame.swift; sourceTree = "<group>"; };
+		64C4092A2A5EEA440073309C /* Validator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Validator.swift; sourceTree = "<group>"; };
+		64C4092C2A5EF8640073309C /* FlippedCardType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlippedCardType.swift; sourceTree = "<group>"; };
+		64C409322A5EFE4C0073309C /* ValidatorTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ValidatorTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		64C409342A5EFE4C0073309C /* ValidatorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ValidatorTests.swift; sourceTree = "<group>"; };
+		64C409862A5F06880073309C /* LuckyGameTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LuckyGameTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		64C409882A5F06890073309C /* LuckyGameTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LuckyGameTests.swift; sourceTree = "<group>"; };
 		64E6190F2A540E41001030F4 /* 럭키카드.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "럭키카드.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		64E619122A540E41001030F4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		64E619142A540E41001030F4 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -58,30 +233,67 @@
 		64E6191B2A540E42001030F4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		64E6191E2A540E42001030F4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		64E619202A540E42001030F4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		64E619252A540E42001030F4 /* LuckyCardGameTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LuckyCardGameTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		64E619292A540E42001030F4 /* LuckyCardGameTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LuckyCardGameTests.swift; sourceTree = "<group>"; };
-		64E6192F2A540E42001030F4 /* LuckyCardGameUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LuckyCardGameUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		64E619332A540E42001030F4 /* LuckyCardGameUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LuckyCardGameUITests.swift; sourceTree = "<group>"; };
-		64E619352A540E42001030F4 /* LuckyCardGameUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LuckyCardGameUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		64E619452A5410C0001030F4 /* ContainerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContainerView.swift; sourceTree = "<group>"; };
-		64E6194A2A55021A001030F4 /* Card.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Card.swift; sourceTree = "<group>"; };
+		64E6194A2A55021A001030F4 /* LuckyCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LuckyCard.swift; sourceTree = "<group>"; };
 		64E6195A2A5514A2001030F4 /* AnimalType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimalType.swift; sourceTree = "<group>"; };
-		64E6195C2A551A4C001030F4 /* CardFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardFactory.swift; sourceTree = "<group>"; };
+		64E6195C2A551A4C001030F4 /* LuckyCardFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LuckyCardFactory.swift; sourceTree = "<group>"; };
 		64E6195E2A551A57001030F4 /* Divider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Divider.swift; sourceTree = "<group>"; };
 		64E619652A554E11001030F4 /* UIView+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+.swift"; sourceTree = "<group>"; };
 		64E619672A555C93001030F4 /* CardNumberType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardNumberType.swift; sourceTree = "<group>"; };
 		64E619692A565ABE001030F4 /* PlayerCountType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerCountType.swift; sourceTree = "<group>"; };
 		64E6196B2A5690D0001030F4 /* Board.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Board.swift; sourceTree = "<group>"; };
-		64E6196D2A569C0B001030F4 /* DefaultLuckyGameManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultLuckyGameManager.swift; sourceTree = "<group>"; };
 		64E6196F2A56B154001030F4 /* BoardNameType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoardNameType.swift; sourceTree = "<group>"; };
 		64E619712A56C4CC001030F4 /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
 		64E619732A57B3D2001030F4 /* UILabel+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UILabel+.swift"; sourceTree = "<group>"; };
 		64E619752A57C341001030F4 /* String+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+.swift"; sourceTree = "<group>"; };
 		64E6198C2A595A0A001030F4 /* DeckCountType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeckCountType.swift; sourceTree = "<group>"; };
 		64E6198E2A5981A4001030F4 /* UIImage+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+.swift"; sourceTree = "<group>"; };
+		64E619BD2A5D2AD1001030F4 /* Player.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Player.swift; sourceTree = "<group>"; };
+		64E619DA2A5E8FF4001030F4 /* LuckyCardFactoryTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LuckyCardFactoryTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		64E619DC2A5E8FF4001030F4 /* LuckyCardFactoryTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LuckyCardFactoryTests.swift; sourceTree = "<group>"; };
+		64E619E82A5E924B001030F4 /* LuckyCardTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LuckyCardTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		64E619EA2A5E924B001030F4 /* LuckyCardTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LuckyCardTests.swift; sourceTree = "<group>"; };
+		64E619F82A5E9520001030F4 /* DividerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DividerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		64E619FA2A5E9520001030F4 /* DividerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DividerTests.swift; sourceTree = "<group>"; };
+		64E61A122A5E9923001030F4 /* MockDivider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockDivider.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		645699832A5FC722000A39BC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		64C409062A5E9F460073309C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		64C409182A5EA4BE0073309C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		64C4092F2A5EFE4C0073309C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		64C409832A5F06880073309C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		64E6190C2A540E41001030F4 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -89,14 +301,21 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		64E619222A540E42001030F4 /* Frameworks */ = {
+		64E619D72A5E8FF3001030F4 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		64E6192C2A540E42001030F4 /* Frameworks */ = {
+		64E619E52A5E924B001030F4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		64E619F52A5E9520001030F4 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -106,12 +325,58 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		645699872A5FC722000A39BC /* EnumTests */ = {
+			isa = PBXGroup;
+			children = (
+				645699882A5FC722000A39BC /* EnumTests.swift */,
+			);
+			path = EnumTests;
+			sourceTree = "<group>";
+		};
+		64C4090A2A5E9F460073309C /* PlayerTests */ = {
+			isa = PBXGroup;
+			children = (
+				64C4090B2A5E9F460073309C /* PlayerTests.swift */,
+			);
+			path = PlayerTests;
+			sourceTree = "<group>";
+		};
+		64C4091C2A5EA4BE0073309C /* BoardTests */ = {
+			isa = PBXGroup;
+			children = (
+				64C4091D2A5EA4BE0073309C /* BoardTests.swift */,
+			);
+			path = BoardTests;
+			sourceTree = "<group>";
+		};
+		64C409332A5EFE4C0073309C /* ValidatorTests */ = {
+			isa = PBXGroup;
+			children = (
+				64C409342A5EFE4C0073309C /* ValidatorTests.swift */,
+			);
+			path = ValidatorTests;
+			sourceTree = "<group>";
+		};
+		64C409872A5F06890073309C /* LuckyGameTests */ = {
+			isa = PBXGroup;
+			children = (
+				64C409882A5F06890073309C /* LuckyGameTests.swift */,
+			);
+			path = LuckyGameTests;
+			sourceTree = "<group>";
+		};
 		64E619062A540E41001030F4 = {
 			isa = PBXGroup;
 			children = (
 				64E619112A540E41001030F4 /* LuckyCardGame */,
-				64E619282A540E42001030F4 /* LuckyCardGameTests */,
-				64E619322A540E42001030F4 /* LuckyCardGameUITests */,
+				64E619DB2A5E8FF4001030F4 /* LuckyCardFactoryTests */,
+				64E619E92A5E924B001030F4 /* LuckyCardTests */,
+				64E619F92A5E9520001030F4 /* DividerTests */,
+				64C4091C2A5EA4BE0073309C /* BoardTests */,
+				64C4090A2A5E9F460073309C /* PlayerTests */,
+				64C409332A5EFE4C0073309C /* ValidatorTests */,
+				64C409872A5F06890073309C /* LuckyGameTests */,
+				645699872A5FC722000A39BC /* EnumTests */,
 				64E619102A540E41001030F4 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -120,8 +385,14 @@
 			isa = PBXGroup;
 			children = (
 				64E6190F2A540E41001030F4 /* 럭키카드.app */,
-				64E619252A540E42001030F4 /* LuckyCardGameTests.xctest */,
-				64E6192F2A540E42001030F4 /* LuckyCardGameUITests.xctest */,
+				64E619DA2A5E8FF4001030F4 /* LuckyCardFactoryTests.xctest */,
+				64E619E82A5E924B001030F4 /* LuckyCardTests.xctest */,
+				64E619F82A5E9520001030F4 /* DividerTests.xctest */,
+				64C409092A5E9F460073309C /* PlayerTests.xctest */,
+				64C4091B2A5EA4BE0073309C /* BoardTests.xctest */,
+				64C409322A5EFE4C0073309C /* ValidatorTests.xctest */,
+				64C409862A5F06880073309C /* LuckyGameTests.xctest */,
+				645699862A5FC722000A39BC /* EnumTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -136,23 +407,6 @@
 				64E619422A540E72001030F4 /* etc */,
 			);
 			path = LuckyCardGame;
-			sourceTree = "<group>";
-		};
-		64E619282A540E42001030F4 /* LuckyCardGameTests */ = {
-			isa = PBXGroup;
-			children = (
-				64E619292A540E42001030F4 /* LuckyCardGameTests.swift */,
-			);
-			path = LuckyCardGameTests;
-			sourceTree = "<group>";
-		};
-		64E619322A540E42001030F4 /* LuckyCardGameUITests */ = {
-			isa = PBXGroup;
-			children = (
-				64E619332A540E42001030F4 /* LuckyCardGameUITests.swift */,
-				64E619352A540E42001030F4 /* LuckyCardGameUITestsLaunchTests.swift */,
-			);
-			path = LuckyCardGameUITests;
 			sourceTree = "<group>";
 		};
 		64E619422A540E72001030F4 /* etc */ = {
@@ -196,6 +450,7 @@
 		64E619492A5501FE001030F4 /* Util */ = {
 			isa = PBXGroup;
 			children = (
+				64E61A112A5E9915001030F4 /* Mock */,
 				64E6194F2A550262001030F4 /* Enum */,
 				64E6194E2A55025B001030F4 /* Extension */,
 			);
@@ -221,6 +476,8 @@
 				64E619692A565ABE001030F4 /* PlayerCountType.swift */,
 				64E6196F2A56B154001030F4 /* BoardNameType.swift */,
 				64E6198C2A595A0A001030F4 /* DeckCountType.swift */,
+				64C277472A5F9E150033C563 /* TargetType.swift */,
+				64C4092C2A5EF8640073309C /* FlippedCardType.swift */,
 			);
 			path = Enum;
 			sourceTree = "<group>";
@@ -228,10 +485,12 @@
 		64E619502A550283001030F4 /* Class */ = {
 			isa = PBXGroup;
 			children = (
-				64E6194A2A55021A001030F4 /* Card.swift */,
-				64E6195C2A551A4C001030F4 /* CardFactory.swift */,
+				64E6194A2A55021A001030F4 /* LuckyCard.swift */,
+				64E6195C2A551A4C001030F4 /* LuckyCardFactory.swift */,
+				64C409282A5EAA6E0073309C /* LuckyGame.swift */,
 				64E6195E2A551A57001030F4 /* Divider.swift */,
-				64E6196D2A569C0B001030F4 /* DefaultLuckyGameManager.swift */,
+				64E619BD2A5D2AD1001030F4 /* Player.swift */,
+				64C4092A2A5EEA440073309C /* Validator.swift */,
 			);
 			path = Class;
 			sourceTree = "<group>";
@@ -244,9 +503,133 @@
 			path = Struct;
 			sourceTree = "<group>";
 		};
+		64E619DB2A5E8FF4001030F4 /* LuckyCardFactoryTests */ = {
+			isa = PBXGroup;
+			children = (
+				64E619DC2A5E8FF4001030F4 /* LuckyCardFactoryTests.swift */,
+			);
+			path = LuckyCardFactoryTests;
+			sourceTree = "<group>";
+		};
+		64E619E92A5E924B001030F4 /* LuckyCardTests */ = {
+			isa = PBXGroup;
+			children = (
+				64E619EA2A5E924B001030F4 /* LuckyCardTests.swift */,
+			);
+			path = LuckyCardTests;
+			sourceTree = "<group>";
+		};
+		64E619F92A5E9520001030F4 /* DividerTests */ = {
+			isa = PBXGroup;
+			children = (
+				64E619FA2A5E9520001030F4 /* DividerTests.swift */,
+			);
+			path = DividerTests;
+			sourceTree = "<group>";
+		};
+		64E61A112A5E9915001030F4 /* Mock */ = {
+			isa = PBXGroup;
+			children = (
+				64E61A122A5E9923001030F4 /* MockDivider.swift */,
+				64C2773C2A5F94A70033C563 /* MockValidator.swift */,
+				64C277402A5F94C50033C563 /* MockGround.swift */,
+			);
+			path = Mock;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		645699852A5FC722000A39BC /* EnumTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6456998C2A5FC722000A39BC /* Build configuration list for PBXNativeTarget "EnumTests" */;
+			buildPhases = (
+				645699822A5FC722000A39BC /* Sources */,
+				645699832A5FC722000A39BC /* Frameworks */,
+				645699842A5FC722000A39BC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6456998B2A5FC722000A39BC /* PBXTargetDependency */,
+			);
+			name = EnumTests;
+			productName = EnumTests;
+			productReference = 645699862A5FC722000A39BC /* EnumTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		64C409082A5E9F460073309C /* PlayerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 64C409112A5E9F460073309C /* Build configuration list for PBXNativeTarget "PlayerTests" */;
+			buildPhases = (
+				64C409052A5E9F460073309C /* Sources */,
+				64C409062A5E9F460073309C /* Frameworks */,
+				64C409072A5E9F460073309C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				64C4090E2A5E9F460073309C /* PBXTargetDependency */,
+			);
+			name = PlayerTests;
+			productName = PlayerTests;
+			productReference = 64C409092A5E9F460073309C /* PlayerTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		64C4091A2A5EA4BE0073309C /* BoardTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 64C409212A5EA4BE0073309C /* Build configuration list for PBXNativeTarget "BoardTests" */;
+			buildPhases = (
+				64C409172A5EA4BE0073309C /* Sources */,
+				64C409182A5EA4BE0073309C /* Frameworks */,
+				64C409192A5EA4BE0073309C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				64C409202A5EA4BE0073309C /* PBXTargetDependency */,
+			);
+			name = BoardTests;
+			productName = BoardTests;
+			productReference = 64C4091B2A5EA4BE0073309C /* BoardTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		64C409312A5EFE4C0073309C /* ValidatorTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 64C409382A5EFE4C0073309C /* Build configuration list for PBXNativeTarget "ValidatorTests" */;
+			buildPhases = (
+				64C4092E2A5EFE4C0073309C /* Sources */,
+				64C4092F2A5EFE4C0073309C /* Frameworks */,
+				64C409302A5EFE4C0073309C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				64C409372A5EFE4C0073309C /* PBXTargetDependency */,
+			);
+			name = ValidatorTests;
+			productName = ValidatorTests;
+			productReference = 64C409322A5EFE4C0073309C /* ValidatorTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		64C409852A5F06880073309C /* LuckyGameTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 64C4098C2A5F06890073309C /* Build configuration list for PBXNativeTarget "LuckyGameTests" */;
+			buildPhases = (
+				64C409822A5F06880073309C /* Sources */,
+				64C409832A5F06880073309C /* Frameworks */,
+				64C409842A5F06880073309C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				64C4098B2A5F06890073309C /* PBXTargetDependency */,
+			);
+			name = LuckyGameTests;
+			productName = LuckyGameTests;
+			productReference = 64C409862A5F06880073309C /* LuckyGameTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		64E6190E2A540E41001030F4 /* LuckyCardGame */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 64E619392A540E42001030F4 /* Build configuration list for PBXNativeTarget "LuckyCardGame" */;
@@ -264,41 +647,59 @@
 			productReference = 64E6190F2A540E41001030F4 /* 럭키카드.app */;
 			productType = "com.apple.product-type.application";
 		};
-		64E619242A540E42001030F4 /* LuckyCardGameTests */ = {
+		64E619D92A5E8FF3001030F4 /* LuckyCardFactoryTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 64E6193C2A540E42001030F4 /* Build configuration list for PBXNativeTarget "LuckyCardGameTests" */;
+			buildConfigurationList = 64E619E02A5E8FF4001030F4 /* Build configuration list for PBXNativeTarget "LuckyCardFactoryTests" */;
 			buildPhases = (
-				64E619212A540E42001030F4 /* Sources */,
-				64E619222A540E42001030F4 /* Frameworks */,
-				64E619232A540E42001030F4 /* Resources */,
+				64E619D62A5E8FF3001030F4 /* Sources */,
+				64E619D72A5E8FF3001030F4 /* Frameworks */,
+				64E619D82A5E8FF3001030F4 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				64E619272A540E42001030F4 /* PBXTargetDependency */,
+				64E619DF2A5E8FF4001030F4 /* PBXTargetDependency */,
 			);
-			name = LuckyCardGameTests;
-			productName = LuckyCardGameTests;
-			productReference = 64E619252A540E42001030F4 /* LuckyCardGameTests.xctest */;
+			name = LuckyCardFactoryTests;
+			productName = LuckyCardFactoryTests;
+			productReference = 64E619DA2A5E8FF4001030F4 /* LuckyCardFactoryTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		64E6192E2A540E42001030F4 /* LuckyCardGameUITests */ = {
+		64E619E72A5E924B001030F4 /* LuckyCardTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 64E6193F2A540E42001030F4 /* Build configuration list for PBXNativeTarget "LuckyCardGameUITests" */;
+			buildConfigurationList = 64E619EE2A5E924B001030F4 /* Build configuration list for PBXNativeTarget "LuckyCardTests" */;
 			buildPhases = (
-				64E6192B2A540E42001030F4 /* Sources */,
-				64E6192C2A540E42001030F4 /* Frameworks */,
-				64E6192D2A540E42001030F4 /* Resources */,
+				64E619E42A5E924B001030F4 /* Sources */,
+				64E619E52A5E924B001030F4 /* Frameworks */,
+				64E619E62A5E924B001030F4 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				64E619312A540E42001030F4 /* PBXTargetDependency */,
+				64E619ED2A5E924B001030F4 /* PBXTargetDependency */,
 			);
-			name = LuckyCardGameUITests;
-			productName = LuckyCardGameUITests;
-			productReference = 64E6192F2A540E42001030F4 /* LuckyCardGameUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
+			name = LuckyCardTests;
+			productName = LuckyCardTests;
+			productReference = 64E619E82A5E924B001030F4 /* LuckyCardTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		64E619F72A5E9520001030F4 /* DividerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 64E619FE2A5E9520001030F4 /* Build configuration list for PBXNativeTarget "DividerTests" */;
+			buildPhases = (
+				64E619F42A5E9520001030F4 /* Sources */,
+				64E619F52A5E9520001030F4 /* Frameworks */,
+				64E619F62A5E9520001030F4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				64E619FD2A5E9520001030F4 /* PBXTargetDependency */,
+			);
+			name = DividerTests;
+			productName = DividerTests;
+			productReference = 64E619F82A5E9520001030F4 /* DividerTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
 
@@ -310,14 +711,38 @@
 				LastSwiftUpdateCheck = 1430;
 				LastUpgradeCheck = 1430;
 				TargetAttributes = {
-					64E6190E2A540E41001030F4 = {
-						CreatedOnToolsVersion = 14.3.1;
-					};
-					64E619242A540E42001030F4 = {
+					645699852A5FC722000A39BC = {
 						CreatedOnToolsVersion = 14.3.1;
 						TestTargetID = 64E6190E2A540E41001030F4;
 					};
-					64E6192E2A540E42001030F4 = {
+					64C409082A5E9F460073309C = {
+						CreatedOnToolsVersion = 14.3.1;
+						TestTargetID = 64E6190E2A540E41001030F4;
+					};
+					64C4091A2A5EA4BE0073309C = {
+						CreatedOnToolsVersion = 14.3.1;
+						TestTargetID = 64E6190E2A540E41001030F4;
+					};
+					64C409312A5EFE4C0073309C = {
+						CreatedOnToolsVersion = 14.3.1;
+						TestTargetID = 64E6190E2A540E41001030F4;
+					};
+					64C409852A5F06880073309C = {
+						CreatedOnToolsVersion = 14.3.1;
+						TestTargetID = 64E6190E2A540E41001030F4;
+					};
+					64E6190E2A540E41001030F4 = {
+						CreatedOnToolsVersion = 14.3.1;
+					};
+					64E619D92A5E8FF3001030F4 = {
+						CreatedOnToolsVersion = 14.3.1;
+						TestTargetID = 64E6190E2A540E41001030F4;
+					};
+					64E619E72A5E924B001030F4 = {
+						CreatedOnToolsVersion = 14.3.1;
+						TestTargetID = 64E6190E2A540E41001030F4;
+					};
+					64E619F72A5E9520001030F4 = {
 						CreatedOnToolsVersion = 14.3.1;
 						TestTargetID = 64E6190E2A540E41001030F4;
 					};
@@ -337,13 +762,54 @@
 			projectRoot = "";
 			targets = (
 				64E6190E2A540E41001030F4 /* LuckyCardGame */,
-				64E619242A540E42001030F4 /* LuckyCardGameTests */,
-				64E6192E2A540E42001030F4 /* LuckyCardGameUITests */,
+				64E619D92A5E8FF3001030F4 /* LuckyCardFactoryTests */,
+				64E619E72A5E924B001030F4 /* LuckyCardTests */,
+				64E619F72A5E9520001030F4 /* DividerTests */,
+				64C4091A2A5EA4BE0073309C /* BoardTests */,
+				64C409082A5E9F460073309C /* PlayerTests */,
+				64C409312A5EFE4C0073309C /* ValidatorTests */,
+				64C409852A5F06880073309C /* LuckyGameTests */,
+				645699852A5FC722000A39BC /* EnumTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		645699842A5FC722000A39BC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		64C409072A5E9F460073309C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		64C409192A5EA4BE0073309C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		64C409302A5EFE4C0073309C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		64C409842A5F06880073309C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		64E6190D2A540E41001030F4 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -353,14 +819,21 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		64E619232A540E42001030F4 /* Resources */ = {
+		64E619D82A5E8FF3001030F4 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		64E6192D2A540E42001030F4 /* Resources */ = {
+		64E619E62A5E924B001030F4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		64E619F62A5E9520001030F4 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -370,25 +843,135 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		645699822A5FC722000A39BC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				645699952A5FC72A000A39BC /* FlippedCardType.swift in Sources */,
+				645699912A5FC72A000A39BC /* CardNumberType.swift in Sources */,
+				645699902A5FC72A000A39BC /* PlayerCountType.swift in Sources */,
+				645699892A5FC722000A39BC /* EnumTests.swift in Sources */,
+				6456998F2A5FC72A000A39BC /* BoardNameType.swift in Sources */,
+				645699922A5FC72A000A39BC /* DeckCountType.swift in Sources */,
+				645699932A5FC72A000A39BC /* AnimalType.swift in Sources */,
+				645699942A5FC72A000A39BC /* TargetType.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		64C409052A5E9F460073309C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				64C4097B2A5F001D0073309C /* Validator.swift in Sources */,
+				64C409442A5EFECB0073309C /* FlippedCardType.swift in Sources */,
+				64C409142A5E9F5F0073309C /* LuckyCard.swift in Sources */,
+				64C4095C2A5F00160073309C /* PlayerCountType.swift in Sources */,
+				64C4095D2A5F00160073309C /* DeckCountType.swift in Sources */,
+				64C409122A5E9F540073309C /* Player.swift in Sources */,
+				64C409162A5E9F690073309C /* CardNumberType.swift in Sources */,
+				64C409792A5F001D0073309C /* LuckyGame.swift in Sources */,
+				64C4090C2A5E9F460073309C /* PlayerTests.swift in Sources */,
+				64C4095E2A5F00160073309C /* BoardNameType.swift in Sources */,
+				64C409152A5E9F670073309C /* AnimalType.swift in Sources */,
+				64C4097A2A5F001D0073309C /* Divider.swift in Sources */,
+				64C409782A5F001D0073309C /* LuckyCardFactory.swift in Sources */,
+				64C409132A5E9F580073309C /* Board.swift in Sources */,
+				64C2774E2A5F9EE50033C563 /* TargetType.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		64C409172A5EA4BE0073309C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				64C409762A5F001D0073309C /* Validator.swift in Sources */,
+				64C409592A5F00150073309C /* PlayerCountType.swift in Sources */,
+				64C4095B2A5F00150073309C /* BoardNameType.swift in Sources */,
+				64C409262A5EA4C80073309C /* CardNumberType.swift in Sources */,
+				64C409732A5F001D0073309C /* Player.swift in Sources */,
+				64C4095A2A5F00150073309C /* DeckCountType.swift in Sources */,
+				64C409242A5EA4C20073309C /* Board.swift in Sources */,
+				64C409742A5F001D0073309C /* LuckyGame.swift in Sources */,
+				64C409272A5EA67B0073309C /* LuckyCard.swift in Sources */,
+				64C4091E2A5EA4BE0073309C /* BoardTests.swift in Sources */,
+				64C409252A5EA4C60073309C /* AnimalType.swift in Sources */,
+				64C409752A5F001D0073309C /* Divider.swift in Sources */,
+				64C409422A5EFEC50073309C /* FlippedCardType.swift in Sources */,
+				64C409722A5F001D0073309C /* LuckyCardFactory.swift in Sources */,
+				64C2774D2A5F9EE50033C563 /* TargetType.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		64C4092E2A5EFE4C0073309C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				64C4093D2A5EFE940073309C /* CardNumberType.swift in Sources */,
+				64C409602A5F00160073309C /* DeckCountType.swift in Sources */,
+				64C4097E2A5F001D0073309C /* LuckyGame.swift in Sources */,
+				64C4093B2A5EFE6C0073309C /* Validator.swift in Sources */,
+				64C409472A5EFF330073309C /* FlippedCardType.swift in Sources */,
+				64C409612A5F00160073309C /* BoardNameType.swift in Sources */,
+				64C409352A5EFE4C0073309C /* ValidatorTests.swift in Sources */,
+				64C4093E2A5EFE960073309C /* AnimalType.swift in Sources */,
+				64C4094A2A5EFF8D0073309C /* Board.swift in Sources */,
+				64C4094B2A5EFFF40073309C /* Player.swift in Sources */,
+				64C4097D2A5F001D0073309C /* LuckyCardFactory.swift in Sources */,
+				64C4095F2A5F00160073309C /* PlayerCountType.swift in Sources */,
+				64C4093C2A5EFE700073309C /* LuckyCard.swift in Sources */,
+				64C4097F2A5F001D0073309C /* Divider.swift in Sources */,
+				64C2774F2A5F9EE50033C563 /* TargetType.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		64C409822A5F06880073309C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				64C277492A5F9EB20033C563 /* TargetType.swift in Sources */,
+				64C409992A5F06930073309C /* LuckyGame.swift in Sources */,
+				64C409952A5F068F0073309C /* FlippedCardType.swift in Sources */,
+				64C409912A5F068F0073309C /* CardNumberType.swift in Sources */,
+				64C409902A5F068F0073309C /* PlayerCountType.swift in Sources */,
+				64C409892A5F06890073309C /* LuckyGameTests.swift in Sources */,
+				64C4099C2A5F06930073309C /* Validator.swift in Sources */,
+				64C4098F2A5F068F0073309C /* BoardNameType.swift in Sources */,
+				64C409922A5F068F0073309C /* DeckCountType.swift in Sources */,
+				64C409972A5F06930073309C /* Divider.swift in Sources */,
+				64C409962A5F06930073309C /* Player.swift in Sources */,
+				64C277432A5F97890033C563 /* MockValidator.swift in Sources */,
+				64C277462A5F97890033C563 /* MockDivider.swift in Sources */,
+				64C277452A5F97890033C563 /* MockGround.swift in Sources */,
+				64C4099B2A5F06930073309C /* LuckyCardFactory.swift in Sources */,
+				64C409932A5F068F0073309C /* AnimalType.swift in Sources */,
+				64C4099D2A5F06960073309C /* Board.swift in Sources */,
+				64C4099A2A5F06930073309C /* LuckyCard.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		64E6190B2A540E41001030F4 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				64C277482A5F9E150033C563 /* TargetType.swift in Sources */,
 				64E6195F2A551A57001030F4 /* Divider.swift in Sources */,
 				64E619702A56B154001030F4 /* BoardNameType.swift in Sources */,
 				64E619462A5410C0001030F4 /* ContainerView.swift in Sources */,
 				64E619172A540E41001030F4 /* ViewController.swift in Sources */,
 				64E619722A56C4CC001030F4 /* CardView.swift in Sources */,
-				64E6194B2A55021A001030F4 /* Card.swift in Sources */,
+				64E6194B2A55021A001030F4 /* LuckyCard.swift in Sources */,
 				64E619742A57B3D2001030F4 /* UILabel+.swift in Sources */,
 				64E6196C2A5690D0001030F4 /* Board.swift in Sources */,
+				64E619BE2A5D2AD1001030F4 /* Player.swift in Sources */,
 				64E619132A540E41001030F4 /* AppDelegate.swift in Sources */,
+				64C409292A5EAA6E0073309C /* LuckyGame.swift in Sources */,
 				64E619152A540E41001030F4 /* SceneDelegate.swift in Sources */,
 				64E619662A554E11001030F4 /* UIView+.swift in Sources */,
 				64E6196A2A565ABE001030F4 /* PlayerCountType.swift in Sources */,
+				64C4092D2A5EF8640073309C /* FlippedCardType.swift in Sources */,
 				64E6198D2A595A0A001030F4 /* DeckCountType.swift in Sources */,
-				64E6195D2A551A4C001030F4 /* CardFactory.swift in Sources */,
-				64E6196E2A569C0B001030F4 /* DefaultLuckyGameManager.swift in Sources */,
+				64C4092B2A5EEA440073309C /* Validator.swift in Sources */,
+				64E6195D2A551A4C001030F4 /* LuckyCardFactory.swift in Sources */,
 				64E619762A57C341001030F4 /* String+.swift in Sources */,
 				64E619682A555C93001030F4 /* CardNumberType.swift in Sources */,
 				64E6195B2A5514A2001030F4 /* AnimalType.swift in Sources */,
@@ -396,35 +979,114 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		64E619212A540E42001030F4 /* Sources */ = {
+		64E619D62A5E8FF3001030F4 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				64E6192A2A540E42001030F4 /* LuckyCardGameTests.swift in Sources */,
+				64C409642A5F001B0073309C /* LuckyGame.swift in Sources */,
+				64C4094E2A5F00140073309C /* FlippedCardType.swift in Sources */,
+				64C409652A5F001B0073309C /* Divider.swift in Sources */,
+				64C4094C2A5F00140073309C /* PlayerCountType.swift in Sources */,
+				64E61A062A5E95CE001030F4 /* CardNumberType.swift in Sources */,
+				64C409632A5F001B0073309C /* Player.swift in Sources */,
+				64C409662A5F001B0073309C /* Validator.swift in Sources */,
+				64E619DD2A5E8FF4001030F4 /* LuckyCardFactoryTests.swift in Sources */,
+				64E61A072A5E95F8001030F4 /* LuckyCard.swift in Sources */,
+				64E61A042A5E9577001030F4 /* LuckyCardFactory.swift in Sources */,
+				64C4094D2A5F00140073309C /* DeckCountType.swift in Sources */,
+				64E61A052A5E95CC001030F4 /* AnimalType.swift in Sources */,
+				64C409802A5F00200073309C /* Board.swift in Sources */,
+				64C4094F2A5F00140073309C /* BoardNameType.swift in Sources */,
+				64C2774A2A5F9EE40033C563 /* TargetType.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		64E6192B2A540E42001030F4 /* Sources */ = {
+		64E619E42A5E924B001030F4 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				64E619342A540E42001030F4 /* LuckyCardGameUITests.swift in Sources */,
-				64E619362A540E42001030F4 /* LuckyCardGameUITestsLaunchTests.swift in Sources */,
+				64C4096A2A5F001B0073309C /* LuckyGame.swift in Sources */,
+				64C409522A5F00140073309C /* DeckCountType.swift in Sources */,
+				64C4096B2A5F001B0073309C /* Divider.swift in Sources */,
+				64C409542A5F00140073309C /* BoardNameType.swift in Sources */,
+				64E619F32A5E92A1001030F4 /* CardNumberType.swift in Sources */,
+				64C409692A5F001B0073309C /* Player.swift in Sources */,
+				64C4096C2A5F001B0073309C /* Validator.swift in Sources */,
+				64E619F12A5E925A001030F4 /* LuckyCard.swift in Sources */,
+				64E619EB2A5E924B001030F4 /* LuckyCardTests.swift in Sources */,
+				64C409512A5F00140073309C /* PlayerCountType.swift in Sources */,
+				64C409682A5F001B0073309C /* LuckyCardFactory.swift in Sources */,
+				64E619F22A5E929E001030F4 /* AnimalType.swift in Sources */,
+				64C409812A5F00200073309C /* Board.swift in Sources */,
+				64C409532A5F00140073309C /* FlippedCardType.swift in Sources */,
+				64C2774B2A5F9EE40033C563 /* TargetType.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		64E619F42A5E9520001030F4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				64C409572A5F00150073309C /* DeckCountType.swift in Sources */,
+				64E619FB2A5E9520001030F4 /* DividerTests.swift in Sources */,
+				64C409492A5EFF8C0073309C /* Board.swift in Sources */,
+				64E61A012A5E9538001030F4 /* Divider.swift in Sources */,
+				64E61A0B2A5E9639001030F4 /* CardNumberType.swift in Sources */,
+				64E61A082A5E9623001030F4 /* LuckyCard.swift in Sources */,
+				64E61A0A2A5E9636001030F4 /* AnimalType.swift in Sources */,
+				64C409562A5F00150073309C /* PlayerCountType.swift in Sources */,
+				64E61A092A5E9626001030F4 /* LuckyCardFactory.swift in Sources */,
+				64C409702A5F001C0073309C /* Validator.swift in Sources */,
+				64C4096F2A5F001C0073309C /* LuckyGame.swift in Sources */,
+				64C409582A5F00150073309C /* BoardNameType.swift in Sources */,
+				64C4096E2A5F001C0073309C /* Player.swift in Sources */,
+				64C409462A5EFF1A0073309C /* FlippedCardType.swift in Sources */,
+				64C2774C2A5F9EE40033C563 /* TargetType.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		64E619272A540E42001030F4 /* PBXTargetDependency */ = {
+		6456998B2A5FC722000A39BC /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 64E6190E2A540E41001030F4 /* LuckyCardGame */;
-			targetProxy = 64E619262A540E42001030F4 /* PBXContainerItemProxy */;
+			targetProxy = 6456998A2A5FC722000A39BC /* PBXContainerItemProxy */;
 		};
-		64E619312A540E42001030F4 /* PBXTargetDependency */ = {
+		64C4090E2A5E9F460073309C /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 64E6190E2A540E41001030F4 /* LuckyCardGame */;
-			targetProxy = 64E619302A540E42001030F4 /* PBXContainerItemProxy */;
+			targetProxy = 64C4090D2A5E9F460073309C /* PBXContainerItemProxy */;
+		};
+		64C409202A5EA4BE0073309C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 64E6190E2A540E41001030F4 /* LuckyCardGame */;
+			targetProxy = 64C4091F2A5EA4BE0073309C /* PBXContainerItemProxy */;
+		};
+		64C409372A5EFE4C0073309C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 64E6190E2A540E41001030F4 /* LuckyCardGame */;
+			targetProxy = 64C409362A5EFE4C0073309C /* PBXContainerItemProxy */;
+		};
+		64C4098B2A5F06890073309C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 64E6190E2A540E41001030F4 /* LuckyCardGame */;
+			targetProxy = 64C4098A2A5F06890073309C /* PBXContainerItemProxy */;
+		};
+		64E619DF2A5E8FF4001030F4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 64E6190E2A540E41001030F4 /* LuckyCardGame */;
+			targetProxy = 64E619DE2A5E8FF4001030F4 /* PBXContainerItemProxy */;
+		};
+		64E619ED2A5E924B001030F4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 64E6190E2A540E41001030F4 /* LuckyCardGame */;
+			targetProxy = 64E619EC2A5E924B001030F4 /* PBXContainerItemProxy */;
+		};
+		64E619FD2A5E9520001030F4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 64E6190E2A540E41001030F4 /* LuckyCardGame */;
+			targetProxy = 64E619FC2A5E9520001030F4 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -440,6 +1102,186 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		6456998D2A5FC722000A39BC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 3X23G6XQ74;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "NamSeok-Bae.EnumTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/럭키카드.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/럭키카드";
+			};
+			name = Debug;
+		};
+		6456998E2A5FC722000A39BC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 3X23G6XQ74;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "NamSeok-Bae.EnumTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/럭키카드.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/럭키카드";
+			};
+			name = Release;
+		};
+		64C4090F2A5E9F460073309C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 3X23G6XQ74;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "NamSeok-Bae.PlayerTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/럭키카드.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/럭키카드";
+			};
+			name = Debug;
+		};
+		64C409102A5E9F460073309C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 3X23G6XQ74;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "NamSeok-Bae.PlayerTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/럭키카드.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/럭키카드";
+			};
+			name = Release;
+		};
+		64C409222A5EA4BE0073309C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 3X23G6XQ74;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "NamSeok-Bae.BoardTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/럭키카드.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/럭키카드";
+			};
+			name = Debug;
+		};
+		64C409232A5EA4BE0073309C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 3X23G6XQ74;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "NamSeok-Bae.BoardTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/럭키카드.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/럭키카드";
+			};
+			name = Release;
+		};
+		64C409392A5EFE4C0073309C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 3X23G6XQ74;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "NamSeok-Bae.ValidatorTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/럭키카드.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/럭키카드";
+			};
+			name = Debug;
+		};
+		64C4093A2A5EFE4C0073309C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 3X23G6XQ74;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "NamSeok-Bae.ValidatorTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/럭키카드.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/럭키카드";
+			};
+			name = Release;
+		};
+		64C4098D2A5F06890073309C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 3X23G6XQ74;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "NamSeok-Bae.LuckyGameTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/럭키카드.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/럭키카드";
+			};
+			name = Debug;
+		};
+		64C4098E2A5F06890073309C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 3X23G6XQ74;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "NamSeok-Bae.LuckyGameTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/럭키카드.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/럭키카드";
+			};
+			name = Release;
+		};
 		64E619372A540E42001030F4 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -562,6 +1404,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 3X23G6XQ74;
+				ENABLE_TESTABILITY = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = LuckyCardGame/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -589,6 +1432,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 3X23G6XQ74;
+				ENABLE_TESTABILITY = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = LuckyCardGame/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -608,85 +1452,162 @@
 			};
 			name = Release;
 		};
-		64E6193D2A540E42001030F4 /* Debug */ = {
+		64E619E12A5E8FF4001030F4 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 3X23G6XQ74;
 				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "NamSeok-Bae.LuckyCardGameTests";
+				PRODUCT_BUNDLE_IDENTIFIER = "NamSeok-Bae.LuckyCardFactoryTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/LuckyCardGame.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/LuckyCardGame";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/럭키카드.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/럭키카드";
 			};
 			name = Debug;
 		};
-		64E6193E2A540E42001030F4 /* Release */ = {
+		64E619E22A5E8FF4001030F4 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 3X23G6XQ74;
 				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "NamSeok-Bae.LuckyCardGameTests";
+				PRODUCT_BUNDLE_IDENTIFIER = "NamSeok-Bae.LuckyCardFactoryTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/LuckyCardGame.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/LuckyCardGame";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/럭키카드.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/럭키카드";
 			};
 			name = Release;
 		};
-		64E619402A540E42001030F4 /* Debug */ = {
+		64E619EF2A5E924B001030F4 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 3X23G6XQ74;
 				GENERATE_INFOPLIST_FILE = YES;
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "NamSeok-Bae.LuckyCardGameUITests";
+				PRODUCT_BUNDLE_IDENTIFIER = "NamSeok-Bae.LuckyCardTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = LuckyCardGame;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/럭키카드.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/럭키카드";
 			};
 			name = Debug;
 		};
-		64E619412A540E42001030F4 /* Release */ = {
+		64E619F02A5E924B001030F4 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 3X23G6XQ74;
 				GENERATE_INFOPLIST_FILE = YES;
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "NamSeok-Bae.LuckyCardGameUITests";
+				PRODUCT_BUNDLE_IDENTIFIER = "NamSeok-Bae.LuckyCardTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = LuckyCardGame;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/럭키카드.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/럭키카드";
+			};
+			name = Release;
+		};
+		64E619FF2A5E9520001030F4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 3X23G6XQ74;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "NamSeok-Bae.DividerTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/럭키카드.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/럭키카드";
+			};
+			name = Debug;
+		};
+		64E61A002A5E9520001030F4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 3X23G6XQ74;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "NamSeok-Bae.DividerTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/럭키카드.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/럭키카드";
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		6456998C2A5FC722000A39BC /* Build configuration list for PBXNativeTarget "EnumTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6456998D2A5FC722000A39BC /* Debug */,
+				6456998E2A5FC722000A39BC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		64C409112A5E9F460073309C /* Build configuration list for PBXNativeTarget "PlayerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				64C4090F2A5E9F460073309C /* Debug */,
+				64C409102A5E9F460073309C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		64C409212A5EA4BE0073309C /* Build configuration list for PBXNativeTarget "BoardTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				64C409222A5EA4BE0073309C /* Debug */,
+				64C409232A5EA4BE0073309C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		64C409382A5EFE4C0073309C /* Build configuration list for PBXNativeTarget "ValidatorTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				64C409392A5EFE4C0073309C /* Debug */,
+				64C4093A2A5EFE4C0073309C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		64C4098C2A5F06890073309C /* Build configuration list for PBXNativeTarget "LuckyGameTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				64C4098D2A5F06890073309C /* Debug */,
+				64C4098E2A5F06890073309C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		64E6190A2A540E41001030F4 /* Build configuration list for PBXProject "LuckyCardGame" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -705,20 +1626,29 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		64E6193C2A540E42001030F4 /* Build configuration list for PBXNativeTarget "LuckyCardGameTests" */ = {
+		64E619E02A5E8FF4001030F4 /* Build configuration list for PBXNativeTarget "LuckyCardFactoryTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				64E6193D2A540E42001030F4 /* Debug */,
-				64E6193E2A540E42001030F4 /* Release */,
+				64E619E12A5E8FF4001030F4 /* Debug */,
+				64E619E22A5E8FF4001030F4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		64E6193F2A540E42001030F4 /* Build configuration list for PBXNativeTarget "LuckyCardGameUITests" */ = {
+		64E619EE2A5E924B001030F4 /* Build configuration list for PBXNativeTarget "LuckyCardTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				64E619402A540E42001030F4 /* Debug */,
-				64E619412A540E42001030F4 /* Release */,
+				64E619EF2A5E924B001030F4 /* Debug */,
+				64E619F02A5E924B001030F4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		64E619FE2A5E9520001030F4 /* Build configuration list for PBXNativeTarget "DividerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				64E619FF2A5E9520001030F4 /* Debug */,
+				64E61A002A5E9520001030F4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
