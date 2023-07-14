@@ -30,6 +30,7 @@ final class CardView: UIView {
     }()
     
     // MARK: - Properties
+    private var isFront: Bool = true
     
     // MARK: - LifeCycles
     override init(frame: CGRect) {
@@ -38,7 +39,7 @@ final class CardView: UIView {
         configureUI()
     }
     
-    convenience init(_ card: Card) {
+    convenience init(_ card: LuckyCard) {
         self.init()
         setupViews()
         configureUI()
@@ -93,15 +94,16 @@ final class CardView: UIView {
                                                     constant: -5).isActive = true
     }
     
-    func bindCardData(_ card: Card) {
-        imageView.image = card.animal.emojiToImage(CGSize(width: 30, height: 30), 30)
-        topNumberLabel.text = "\(card.number)"
-        bottomNumberLabel.text = "\(card.number)"
+    func bindCardData(_ card: LuckyCard) {
+        imageView.image = card.getAnimal().emojiToImage(CGSize(width: 30, height: 30), 30)
+        topNumberLabel.text = "\(card.getNumber())"
+        bottomNumberLabel.text = "\(card.getNumber())"
     }
     
-    func lotation(_ isFront: Bool, _ card: Card) {
+    func flippedCard(_ card: LuckyCard) {
+        isFront = !isFront
         topNumberLabel.isHidden = !isFront
         bottomNumberLabel.isHidden = !isFront
-        imageView.image = isFront ? card.animal.emojiToImage(CGSize(width: 30, height: 30), 30) : UIImage.cardBackImage
+        imageView.image = isFront ? card.getAnimal().emojiToImage(CGSize(width: 30, height: 30), 30) : UIImage.cardBackImage
     }
 }

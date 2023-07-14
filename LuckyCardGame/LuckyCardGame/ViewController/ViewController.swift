@@ -36,8 +36,19 @@ class ViewController: UIViewController {
     private var footerViewHeightConstraint: NSLayoutConstraint?
     
     // MARK: - Properties
+    var luckyGame: LuckyGame!
     
     // MARK: - LifeCycles
+    init() {
+        luckyGame = DefaultLuckyGame()
+        super.init(nibName: nil, bundle: nil)
+    }
+    
+    required init?(coder: NSCoder) {
+        luckyGame = DefaultLuckyGame()
+        super.init(coder: coder)
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -58,7 +69,7 @@ class ViewController: UIViewController {
     }
     
     private func setupContainerStackVeiw() {
-        BoardNameType.allCases.dropLast(1).forEach {
+        BoardType.allCases.dropLast(1).forEach {
             containerStackView.addArrangedSubview(ContainerView(areaName: $0.name))
         }
     }
@@ -113,18 +124,22 @@ class ViewController: UIViewController {
     }
     
     private func addCardViewsInContainerView(_ playerCount: Int) {
-        DefaultLuckyGameManager.shared.fetchPlayers(playerCount).enumerated().forEach { (idx, board) in
+        for idx in 0..<playerCount {
+            let board = luckyGame.getPlayer(idx).getBoard()
+            
             if let containerView = containerStackView.arrangedSubviews[idx] as? ContainerView {
                 containerView.areaLabel.isHidden = true
                 
-                let playerDeckCountType = DeckCountType.playerDeckCount(rawValue: board.deck.count) ?? .eight
+                let playerDeckCountType = DeckCountType.playerDeckCount(rawValue: board.getDeck().count) ?? .eight
                 let cardLeadingSpacing = playerDeckCountType.cardLeadingSpacing
                 let cardViewWidth = 60
                 
-                for (cardIndex, card) in board.deck.enumerated() {
+                for (cardIndex, card) in board.getDeck().enumerated() {
                     let cardView = CardView(card)
-                    if idx > 0 { cardView.lotation(false, card) }
                     containerView.addSubview(cardView)
+                    if idx > 0 {
+                        cardView.flippedCard(card)
+                    }
                     cardView.leadingAnchor.constraint(equalTo: containerView.leadingAnchor,
                                                       constant: CGFloat(6 + cardIndex * (cardViewWidth - cardLeadingSpacing))).isActive = true
                     cardView.centerYAnchor.constraint(equalTo: containerView.centerYAnchor).isActive = true
@@ -136,18 +151,17 @@ class ViewController: UIViewController {
     private func addCardViewsInfooterView(_ playerCount: Int) {
         updatefooterViewConstraint(playerCount)
         
-        let board = DefaultLuckyGameManager.shared.fetchGround()
-        let footerDeckCountType = DeckCountType.footerDeckCount(rawValue: board.deck.count) ?? .nine
+        let board = luckyGame.getGround()
+        let footerDeckCountType = DeckCountType.footerDeckCount(rawValue: board.getDeck().count) ?? .nine
         let cardLeadingSpacing = footerDeckCountType.cardLeadingSpacing
         let cardViewWidth = 60
         
-        for (cardIndex, card) in board.deck.enumerated() {
+        for (cardIndex, card) in board.getDeck().enumerated() {
             let cardView = CardView(card)
             let cardTopSpacing = footerDeckCountType.calculateCardTopSpacing(cardIndex)
             let locationIndex = cardIndex % footerDeckCountType.cardCountInTop
-            cardView.lotation(false, card)
             footerView.addSubview(cardView)
-            
+            cardView.flippedCard(card)
             cardView.leadingAnchor.constraint(equalTo: footerView.leadingAnchor,
                                               constant: CGFloat(6 + locationIndex * (cardViewWidth - cardLeadingSpacing))).isActive = true
             cardView.topAnchor.constraint(equalTo: footerView.topAnchor,
@@ -163,12 +177,8 @@ class ViewController: UIViewController {
     
     // MARK: - Objc Functions
     @objc private func didChangeControlValue(segment: UISegmentedControl) {
-        print(segment.titleForSegment(at: segment.selectedSegmentIndex) ?? "없음")
-        
         let playerCount = PlayerCountType.allCases[segment.selectedSegmentIndex].rawValue
-        
-        DefaultLuckyGameManager.shared.divideCardToPlayers(playerCount)
-        DefaultLuckyGameManager.shared.printDescription()
+        luckyGame.initGame(playerCount)
         
         initContainerViews(playerCount)
         initfooterView()

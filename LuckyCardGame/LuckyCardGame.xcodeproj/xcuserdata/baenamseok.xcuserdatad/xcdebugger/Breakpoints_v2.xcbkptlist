@@ -3,4 +3,148 @@
    uuid = "58E59A48-37D6-47DD-BC7D-F8F9284DF5F1"
    type = "1"
    version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "CBA6BC33-CA73-4349-A287-0201F8F5F2E2"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "Yes"
+            filePath = "LuckyCardGame/Model/Class/LuckyGameManager.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "69"
+            endingLineNumber = "69"
+            landmarkName = "printDescription()"
+            landmarkType = "7">
+            <Actions>
+               <BreakpointActionProxy
+                  ActionExtensionID = "Xcode.BreakpointAction.DebuggerCommand">
+                  <ActionContent
+                     consoleCommand = "expr print(players[i].getBoard().getDeck())">
+                  </ActionContent>
+               </BreakpointActionProxy>
+            </Actions>
+            <Locations>
+               <Location
+                  uuid = "CBA6BC33-CA73-4349-A287-0201F8F5F2E2 - 722b5246f2e93be4"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "&#xb7ed;&#xd0a4;&#xce74;&#xb4dc;.DefaultLuckyGameManager.printDescription() -&gt; ()"
+                  moduleName = "&#x1105;&#x1165;&#x11a8;&#x110f;&#x1175;&#x110f;&#x1161;&#x1103;&#x1173;"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/baenamseok/Desktop/softeer/ios-luckycardgame/LuckyCardGame/LuckyCardGame/Model/Class/LuckyGameManager.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "75"
+                  endingLineNumber = "75"
+                  offsetFromSymbolStart = "12">
+               </Location>
+               <Location
+                  uuid = "CBA6BC33-CA73-4349-A287-0201F8F5F2E2 - 722b5246f2e93a99"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "&#xb7ed;&#xd0a4;&#xce74;&#xb4dc;.DefaultLuckyGameManager.printDescription() -&gt; ()"
+                  moduleName = "&#x1105;&#x1165;&#x11a8;&#x110f;&#x1175;&#x110f;&#x1161;&#x1103;&#x1173;"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/baenamseok/Desktop/softeer/ios-luckycardgame/LuckyCardGame/LuckyCardGame/Model/Class/LuckyGameManager.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "70"
+                  endingLineNumber = "70"
+                  offsetFromSymbolStart = "500">
+               </Location>
+               <Location
+                  uuid = "CBA6BC33-CA73-4349-A287-0201F8F5F2E2 - 722b5246f2e93a99"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "&#xb7ed;&#xd0a4;&#xce74;&#xb4dc;.DefaultLuckyGameManager.printDescription() -&gt; ()"
+                  moduleName = "&#x1105;&#x1165;&#x11a8;&#x110f;&#x1175;&#x110f;&#x1161;&#x1103;&#x1173;"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/baenamseok/Desktop/softeer/ios-luckycardgame/LuckyCardGame/LuckyCardGame/Model/Class/LuckyGameManager.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "70"
+                  endingLineNumber = "70"
+                  offsetFromSymbolStart = "484">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "0359A710-4658-4518-AF63-4A1361F4EB2F"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "Yes"
+            filePath = "LuckyCardGame/Model/Class/LuckyGameManager.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "71"
+            endingLineNumber = "71"
+            landmarkName = "printDescription()"
+            landmarkType = "7">
+            <Actions>
+               <BreakpointActionProxy
+                  ActionExtensionID = "Xcode.BreakpointAction.DebuggerCommand">
+                  <ActionContent
+                     consoleCommand = "expr print(ground.getDeck())">
+                  </ActionContent>
+               </BreakpointActionProxy>
+            </Actions>
+            <Locations>
+               <Location
+                  uuid = "0359A710-4658-4518-AF63-4A1361F4EB2F - 722b5246f2e93be4"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "&#xb7ed;&#xd0a4;&#xce74;&#xb4dc;.DefaultLuckyGameManager.printDescription() -&gt; ()"
+                  moduleName = "&#x1105;&#x1165;&#x11a8;&#x110f;&#x1175;&#x110f;&#x1161;&#x1103;&#x1173;"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/baenamseok/Desktop/softeer/ios-luckycardgame/LuckyCardGame/LuckyCardGame/Model/Class/LuckyGameManager.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "75"
+                  endingLineNumber = "75"
+                  offsetFromSymbolStart = "12">
+               </Location>
+               <Location
+                  uuid = "0359A710-4658-4518-AF63-4A1361F4EB2F - 722b5246f2e93a78"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "&#xb7ed;&#xd0a4;&#xce74;&#xb4dc;.DefaultLuckyGameManager.printDescription() -&gt; ()"
+                  moduleName = "&#x1105;&#x1165;&#x11a8;&#x110f;&#x1175;&#x110f;&#x1161;&#x1103;&#x1173;"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/baenamseok/Desktop/softeer/ios-luckycardgame/LuckyCardGame/LuckyCardGame/Model/Class/LuckyGameManager.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "71"
+                  endingLineNumber = "71"
+                  offsetFromSymbolStart = "516">
+               </Location>
+               <Location
+                  uuid = "0359A710-4658-4518-AF63-4A1361F4EB2F - 722b5246f2e93a47"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "&#xb7ed;&#xd0a4;&#xce74;&#xb4dc;.DefaultLuckyGameManager.printDescription() -&gt; ()"
+                  moduleName = "&#x1105;&#x1165;&#x11a8;&#x110f;&#x1175;&#x110f;&#x1161;&#x1103;&#x1173;"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/baenamseok/Desktop/softeer/ios-luckycardgame/LuckyCardGame/LuckyCardGame/Model/Class/LuckyGameManager.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "72"
+                  endingLineNumber = "72"
+                  offsetFromSymbolStart = "488">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
 </Bucket>

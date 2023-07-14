@@ -7,8 +7,8 @@
 
 import Foundation
 
-enum BoardNameType: CaseIterable {
-    case first
+enum BoardType: Int, CaseIterable {
+    case first = 0
     case second
     case third
     case fourth
